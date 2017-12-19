@@ -103,7 +103,7 @@ params:
 | isbn | 书籍isbn码 | 是    | int  |      |
 | cid  | 分类id    | 是    | int  |      |
 
-请求示例：http://47.52.101.29/app1/category/add?name=%E8%80%83%E7%A0%94
+请求示例：http://47.52.101.29/app1/category/upd_book?isbn=9787536692930&cid=2
 
 response:
 
