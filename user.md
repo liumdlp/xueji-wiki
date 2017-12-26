@@ -9,12 +9,10 @@ params:
 |  变量 |  名称  | 必填 |  类型  |                       描述                       |
 |-------|--------|------|--------|--------------------------------------------------|
 | id    | 用户id | 否   | int    | 默认：1,指定要登录的用户id,测试环境可用          |
-| token | 口令   | 是   | string | 用户id=1的token:cd678b5f206c51658d7d5dffd82e6980 |
 
 请求示例：
 
-1.正式环境:
-http://47.52.101.29/app1/user/login?token=cd678b5f206c51658d7d5dffd82e6980
+1.正式环境: 待定
 
 2.测试环境:
 http://47.52.101.29/app1/user/login?id=1
@@ -27,7 +25,7 @@ response:
     "msg": "ok",
     "data": [
         {
-        	"token": "cd678b5f206c51658d7d5dffd82e6980", // 正式环境没有这个属性
+        	"token": "cd678b5f206c51658d7d5dffd82e6980",
             "user": {
                 "id": 1,
                 "openid": "openid1",
