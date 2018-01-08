@@ -1,21 +1,22 @@
 ## 用户(user)
 
-### TODO：登录
+### 登录
 
 uri: app1/user/login
 
 params:
 
-|  变量 |  名称  | 必填 |  类型  |                       描述                       |
-|-------|--------|------|--------|--------------------------------------------------|
-| id    | 用户id | 否   | int    | 默认：1,指定要登录的用户id,测试环境可用          |
+|   变量   |  名称  | 必填 |  类型  | 描述 |
+| -------- | ------ | ---- | ------ | ---- |
+| username | 用户名 | 是   | string |      |
+| key      | 密码   | 是   | string |      |
 
 请求示例：
 
 1.正式环境: 待定
 
 2.测试环境:
-http://47.52.101.29/app1/user/login?id=1
+http://47.52.101.29/app1/user/login?username=liu&key=123
 
 response:
 
@@ -23,28 +24,28 @@ response:
 {
     "code": 0,
     "msg": "ok",
-    "data": [
-        {
-        	"token": "cd678b5f206c51658d7d5dffd82e6980",
-            "user": {
-                "id": 1,
-                "openid": "openid1",
-                "name": "刘先森",
-                "ctime": 0,
-                "utime": 0,
-                "signture": "cd678b5f206c51658d7d5dffd82e6980",
-                "status": 0
-            }
+    "data": {
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSJ9.NOIs16yZ06eG53KuE68AjBnL5j_VpGaHfcG0Lo00f4M",
+        "user": {
+            "id": 1,
+            "name": "刘先森",
+            "signture": "302af1b2e2a1d120ae91197b4eb23cc4",
+            "status": 0,
+            "sex": 0,
+            "avatar": "/static/images/user/cd678b5f206c51658d7d5dffd82e6980.png",
+            "phone": 18888888888,
+            "ctime": 0,
+            "utime": 0
         }
-    ]
+    }
 }
 ```
 
 response 说明：
 
 |        字段        |   名称   |                           说明                          |
-|--------------------|----------|---------------------------------------------------------|
-| code               | 状态码   | 0:正常,333002:token校验失败。未上线前非必填，空着也可以 |
+| ------------------ | -------- | ------------------------------------------------------- |
+| code               | 状态码   | 0:正常,333002:token校验失败|
 | msg                | 消息     | 请求正常为"ok",否则为详细错误信息                       |
 | data.token         | token    | 该用户的token，线上接口无该条目                         |
 | data.user.id       | 用户ID   |                                                         |
