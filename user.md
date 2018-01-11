@@ -74,22 +74,22 @@ response:
 
 response 说明：
 
-|                 字段                |   名称   |                  说明                  |
-| ----------------------------------- | -------- | -------------------------------------- |
-| code                                | 状态码   | 0:正常,333002:token校验失败            |
-| msg                                 | 消息     | 请求正常为"ok",否则为详细错误信息      |
-| data.token                          | token    | 该用户的token，线上接口无该条目        |
-| data.user.id                        | 用户ID   |                                        |
-| data.user.openid                    | OPENID   | 测试属性，后期移除                     |
-| data.user.name                      | 用户名   |                                        |
-| data.user.ctime                     | 创建时间 | 创建时间，unixtimestamp，bigint(13)    |
-| data.user.utime                     | 更新时间 | 更新时间，unixtimestamp，bigint(13)    |
-| data.user.signture                  | 令牌     |                                        |
-| data.user.status                    | 账号状态 | 0:正常                                 |
-| data.user_setting.id                |          |                                        |
-| data.user_setting.user_id           |          |                                        |
-| data.user_setting.notify_free_begin | 账号状态 | 免打扰开始时间，24小时制  格式： hh:mm |
-| data.user_setting.notify_free_end   | 账号状态 | 免打扰结束时间，24小时制  格式：hh:mm  |
+|                 字段                |      名称      |                 说明                |
+| ----------------------------------- | -------------- | ----------------------------------- |
+| code                                | 状态码         | 0:正常,333002:token校验失败         |
+| msg                                 | 消息           | 请求正常为"ok",否则为详细错误信息   |
+| data.token                          | token          | 该用户的token，线上接口无该条目     |
+| data.user.id                        | 用户ID         |                                     |
+| data.user.openid                    | OPENID         | 测试属性，后期移除                  |
+| data.user.name                      | 用户名         |                                     |
+| data.user.ctime                     | 创建时间       | 创建时间，unixtimestamp，bigint(13) |
+| data.user.utime                     | 更新时间       | 更新时间，unixtimestamp，bigint(13) |
+| data.user.signture                  | 令牌           |                                     |
+| data.user.status                    | 账号状态       | 0:正常                              |
+| data.user_setting.id                |                |                                     |
+| data.user_setting.user_id           |                |                                     |
+| data.user_setting.notify_free_begin | 免打扰开始时间 | 24小时制  格式： hh:mm              |
+| data.user_setting.notify_free_end   | 免打扰结束时间 | 24小时制  格式：hh:mm               |
 
 
 
