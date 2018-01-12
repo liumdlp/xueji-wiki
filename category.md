@@ -38,23 +38,47 @@ response:
     "code": 0,
     "msg": "ok",
     "data": {
-        "count": 2,
+        "count": 4,
         "list": [
             {
-                "id": 2,
-                "name": "日语",
-                "uid": 1,
-                "ctime": 1513569372,
-                "utime": 1513569372,
-                "is_deleted": 0
+                "id": 4,
+                "name": "考研",
+                "user_id": 1,
+                "ctime": 1513655026,
+                "utime": 1513655026,
+                "is_deleted": 0,
+                "sort": 0,
+                "book_count": 0
             },
             {
                 "id": 3,
                 "name": "php",
-                "uid": 1,
+                "user_id": 1,
                 "ctime": 1513569517,
                 "utime": 1513569517,
-                "is_deleted": 0
+                "is_deleted": 0,
+                "sort": 1,
+                "book_count": 1
+            },
+            {
+                "id": 2,
+                "name": "日语",
+                "user_id": 1,
+                "ctime": 1513569372,
+                "utime": 1513569372,
+                "is_deleted": 0,
+                "sort": 2,
+                "book_count": 2
+            },
+            {
+                "id": 5,
+                "name": "默认分类",
+                "user_id": 1,
+                "ctime": 1515658090,
+                "utime": 1515658090,
+                "is_deleted": 0,
+                "sort": 3,
+                "book_count": 0
             }
         ]
     }
@@ -63,18 +87,18 @@ response:
 
 response 说明：
 
-| 字段              | 名称    | 说明                        |
-| --------------- | ----- | ------------------------- |
-| code            | 状态码   | 0:正常                      |
-| msg             | 消息    | 请求正常为"ok",否则为详细错误信息       |
-| data.count      | 总数    | 本次查询包含的用户分类条数             |
-| data.list.id    | 分类id  |                           |
-| data.list.name  | 分类名称  |                           |
-| data.list.uid   | 用户id  |                           |
-| data.list.ctime | 创建时间  | 创建该条分类的时间（unix timestamp） |
-| data.list.utime | 更新时间  | 该条目的最后更新时间                |
-| is_deleted      | 是否被删除 | 0:未删除,1:已删除               |
-
+|         字段         |    名称    |                 说明                 |
+| -------------------- | ---------- | ------------------------------------ |
+| code                 | 状态码     | 0:正常                               |
+| msg                  | 消息       | 请求正常为"ok",否则为详细错误信息    |
+| data.count           | 总数       | 本次查询包含的用户分类条数           |
+| data.list.id         | 分类id     |                                      |
+| data.list.name       | 分类名称   |                                      |
+| data.list.uid        | 用户id     |                                      |
+| data.list.ctime      | 创建时间   | 创建该条分类的时间（unix timestamp） |
+| data.list.utime      | 更新时间   | 该条目的最后更新时间                 |
+| data.list.is_deleted | 是否被删除 | 0:未删除,1:已删除                    |
+| data.list.book_count | 书籍数目   | 当前分类下所含书籍合计数目           |
 
 
 ### 添加
