@@ -25,11 +25,12 @@ uri: app1/category/list
 
 params:
 
-| 变量   | 名称   | 必填   | 类型   | 描述   |
-| ---- | ---- | ---- | ---- | ---- |
-| page | 页码   | 否    | int  | 默认：1 |
+| 变量 |   名称   | 必填 | 类型 |   描述   |
+| ---- | -------- | ---- | ---- | -------- |
+| page | 页码     | 否   | int  | 默认：1  |
+| num  | 单页条数 | 否   | int  | 默认：20 |
 
-请求示例：http://47.52.101.29/app1/category/list
+请求示例：http://47.52.101.29/app1/category/list?page=1&num=20
 
 response:
 
