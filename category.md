@@ -17,6 +17,7 @@
 | 333101 | 列表不存在   |
 | 333102 | 书籍查找错误 |
 | 333103 | 分类排序失败 |
+| 333104 | 无新数据     |
 
 
 ### 列表
@@ -174,20 +175,20 @@ response:
 
 response 说明：
 
-| 字段                     | 名称     | 说明                                  |
-| ---------------------- | ------ | ----------------------------------- |
-| code                   | 状态码    | 0:正常,333101:id对应列表不存在,333102:书籍查找错误 |
-| msg                    | 消息     | 请求正常为"ok",否则为详细错误信息                 |
-| data.category_id       | 分类id   | 书籍添加到分类id                           |
-| data.book.id           | 书籍id   |                                     |
-| data.book.title        | 书籍标题   |                                     |
-| data.book.isbn         | 书籍isbn |                                     |
-| data.book.cover_img    | 书籍封面图  |                                     |
-| data.book.author_first | 作者     | 多作者情况下，取第一位作者                       |
-| data.book.author_all   | 作者     | 全部作者，json格式                         |
-| data.book.publisher    | 出版社    |                                     |
-| data.book.pubdate      | 出版时间   |                                     |
-| data.book.douban_id    | 豆瓣id   | 对应的豆瓣api的id                         |
+|          字段          |    名称    |                                说明                                |
+| ---------------------- | ---------- | ------------------------------------------------------------------ |
+| code                   | 状态码     | 0:正常,333101:id对应列表不存在,333102:书籍查找错误,333104:无新数据 |
+| msg                    | 消息       | 请求正常为"ok",否则为详细错误信息                                  |
+| data.category_id       | 分类id     | 书籍添加到分类id                                                   |
+| data.book.id           | 书籍id     |                                                                    |
+| data.book.title        | 书籍标题   |                                                                    |
+| data.book.isbn         | 书籍isbn   |                                                                    |
+| data.book.cover_img    | 书籍封面图 |                                                                    |
+| data.book.author_first | 作者       | 多作者情况下，取第一位作者                                         |
+| data.book.author_all   | 作者       | 全部作者，json格式                                                 |
+| data.book.publisher    | 出版社     |                                                                    |
+| data.book.pubdate      | 出版时间   |                                                                    |
+| data.book.douban_id    | 豆瓣id     | 对应的豆瓣api的id                                                  |
 
 
 ### 排序
