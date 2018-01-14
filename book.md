@@ -25,7 +25,7 @@ params:
 | ---- | ------ | ---- | ------- | ------- |
 | isbn | ISBN码 | 是   | int(13) | 默认：0 |
 
-请求示例：http://47.52.101.29/app1/book/add_book?isbn=9787020033430
+请求示例：http://47.52.101.29/app1/book/add?isbn=9787020033430
 
 response:
 
