@@ -72,7 +72,8 @@ response:
                 "utime": 1515658090,
                 "is_deleted": 0,
                 "sort": 3,
-                "book_count": 0
+                "book_count": 0,
+                "book_list": []
             }
         ]
     }
