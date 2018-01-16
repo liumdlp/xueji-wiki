@@ -42,26 +42,29 @@ response:
         "author_all": "[\"[\\u82f1] J. K. \\u7f57\\u7433\"]",
         "publisher": "人民文学出版社",
         "pubdate": "2000-9",
-        "douban_id": 1041007
+        "douban_id": 1041007,
+        "pages": 0,
+        "ctime": 0,
     }
 }
 ```
 
 <a name="add_book_resp">response 说明：</a>
 
-| 字段                | 名称    | 说明                  |
-| ----------------- | ----- | ------------------- |
-| code              | 状态码   | 0:正常,333201:书籍不存在   |
-| msg               | 消息    | 请求正常为"ok",否则为详细错误信息 |
-| data.id           | 书籍id  |                     |
-| data.title        | 书名    |                     |
-| data.isbn         | ISBN码 |                     |
-| data.cover_img    | 封面    | 封面URL地址             |
-| data.author_first | 作者    | 多作者情况下，取第一位作者       |
-| data.author_all   | 作者    | 全部作者，json格式         |
-| data.publisher    | 出版社   |                     |
-| data.pubdate      | 出版时间  |                     |
-| data.douban_id    | 豆瓣id  | 对应豆瓣api的ID          |
+|        字段       |   名称   |                说明               |
+| ----------------- | -------- | --------------------------------- |
+| code              | 状态码   | 0:正常,333201:书籍不存在          |
+| msg               | 消息     | 请求正常为"ok",否则为详细错误信息 |
+| data.id           | 书籍id   |                                   |
+| data.title        | 书名     |                                   |
+| data.isbn         | ISBN码   |                                   |
+| data.cover_img    | 封面     | 封面URL地址                       |
+| data.author_first | 作者     | 多作者情况下，取第一位作者        |
+| data.author_all   | 作者     | 全部作者，json格式                |
+| data.publisher    | 出版社   |                                   |
+| data.pubdate      | 出版时间 |                                   |
+| data.douban_id    | 豆瓣id   | 对应豆瓣api的ID                   |
+| data.ctime        | 创建时间 | 改书籍录入时间(自定义和豆瓣api)   |
 
 
 
@@ -119,7 +122,9 @@ response:
         "author_all": "[\"\\u94b1\\u953a\\u4e66\"]",
         "publisher": "人民文学出版社",
         "pubdate": "1991-2",
-        "douban_id": 1008145
+        "douban_id": 1008145,
+        "pages": 0,
+        "ctime": 0
     }
 }
 ```
