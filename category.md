@@ -135,8 +135,7 @@ response 说明：
 
 
 ### 插入&更新书籍
-
-已废弃，功能并入 app1/book/add
+**⚠️⚠️⚠️已废弃，功能并入 app1/book/add⚠️⚠️⚠️**
 
 uri: app1/category/upd_book
 
