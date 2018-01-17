@@ -93,7 +93,7 @@ params:
 
 请求示例：
 
-```
+```shell
 curl -X POST http://47.52.101.29/app1/book/add_custom -H 'content-type: application/x-www-form-urlencoded' -d 'token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxfQ.-QqHe1NOuVz8hpMDRm5CZfWT6SWh1R38mwNkjCOj34o&title=%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%E4%B8%8B%E5%86%8C%E8%AE%B2%E4%B9%89&img=%2Fpublic%2Fstatic%2Fimg%2F180102_001.jpg&author=%5B%22%E4%BA%8E%E5%8A%A0%E4%BA%94%22%2C%22%E4%BA%8E%E5%8A%A0%E5%85%AD%22%5D&publisher=%E5%8C%97%E4%BA%AC%E6%9C%89%E7%94%B5%E5%87%BA%E7%89%88%E7%A4%BE&pubdate=2018-01-12&pages=530&cid=2'
 ```
 
