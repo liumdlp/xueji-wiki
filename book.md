@@ -147,7 +147,7 @@ response:
         "pubdate": "1991-2",
         "douban_id": 1008145,
         "pages": 0,
-        "user_id": 0;
+        "user_id": 0,
         "ctime": 0
     }
 }
