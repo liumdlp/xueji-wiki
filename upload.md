@@ -40,7 +40,7 @@ response:
     "data": [
         {
             "name": "mab3nseqAv.jpg",
-            "url": "/static/upload/img/201802/08/mab3nseqAv.jpg",
+            "url": "http://47.52.101.29/static/upload/img/201802/08/mab3nseqAv.jpg",
             "size": 8842
         }
     ]
