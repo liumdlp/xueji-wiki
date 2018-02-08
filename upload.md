@@ -37,13 +37,11 @@ response:
 {
     "code": 0,
     "msg": "ok",
-    "data": [
-        {
-            "name": "mab3nseqAv.jpg",
-            "url": "http://47.52.101.29/static/upload/img/201802/08/mab3nseqAv.jpg",
-            "size": 8842
-        }
-    ]
+    "data": {
+        "name": "1MQ5Hnzkhj7.jpg",
+        "url": "http://47.52.101.29/static/upload/img/201802/08/1MQ5Hnzkhj7.jpg",
+        "size": 8842
+    }
 }
 ```
 
