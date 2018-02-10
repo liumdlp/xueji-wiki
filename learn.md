@@ -29,7 +29,7 @@ params:
 | bpage    | 开始页码     | 是   | int    | 默认为1                          |
 | epage    | 结束页码     | 是   | int    |                                  |
 | review   | 复习计划开关 | 否   | int    | 0:不添加复习计划（默认）  1:添加 |
-| reminder | 备注         | 否   | string | 150字                            |
+| reminder | 备注         | 否   | string | 150字max                         |
 
 
 请求示例：
@@ -63,6 +63,7 @@ response:
             "book_id": 1,
             "reminder": "记得好好复习第三行",
             "status": 0,
+            "user_id": 1,
             "id": 4
         }
     }
@@ -81,3 +82,4 @@ response:
 | data.review.book_id   | 学习的书籍id      |                                                     |
 | data.review.reminder  | 复习备注          |                                                     |
 | data.review.status    | 复习阶段          | 0:未开始 1: 已完成第一阶段  ... 9:已完成所有9个阶段 |
+| data.review.user_id   | 用户id            |                                                     |
