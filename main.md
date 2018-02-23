@@ -34,8 +34,8 @@ response:
     "msg": "ok",
     "data": {
         "count": 2,
-        "list": {
-            "10": {
+        "list": [
+            {
                 "id": 3,
                 "name": "php",
                 "user_id": 1,
@@ -52,7 +52,7 @@ response:
                 ],
                 "book_count": 1
             },
-            "11": {
+            {
                 "id": 2,
                 "name": "日语",
                 "user_id": 1,
@@ -79,7 +79,7 @@ response:
                 ],
                 "book_count": 3
             }
-        },
+        ],
         "recent_learn": [
             {
                 "id": 1,
