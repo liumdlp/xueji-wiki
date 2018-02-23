@@ -91,18 +91,13 @@ response:
                 "book_count": 3
             }
         ],
-        "recent_learn": [
-            {
+        "recent_learn": {
+            "1": {
                 "id": 1,
                 "title": "围城",
                 "cover_img": "https://img3.doubanio.com/mpic/s1070222.jpg"
-            },
-            {
-                "id": 2,
-                "title": "PHP7内核剖析",
-                "cover_img": "https://img3.doubanio.com/mpic/s29607420.jpg"
             }
-        ]
+        }
     }
 }
 ```
