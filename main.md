@@ -33,26 +33,9 @@ response:
     "code": 0,
     "msg": "ok",
     "data": {
-        "count": 3,
-        "list": [
-            {
-                "id": 4,
-                "name": "考研",
-                "user_id": 1,
-                "ctime": 1513655026,
-                "utime": 1513655026,
-                "is_deleted": 0,
-                "sort": 0,
-                "book_list": [
-                    {
-                        "id": 2,
-                        "title": "PHP7内核剖析",
-                        "cover_img": "https://img3.doubanio.com/mpic/s29607420.jpg"
-                    }
-                ],
-                "book_count": 1
-            },
-            {
+        "count": 2,
+        "list": {
+            "10": {
                 "id": 3,
                 "name": "php",
                 "user_id": 1,
@@ -60,10 +43,16 @@ response:
                 "utime": 1513569517,
                 "is_deleted": 0,
                 "sort": 1,
-                "book_list": [],
-                "book_count": 0
+                "book_list": [
+                    {
+                        "id": 7,
+                        "title": "三体",
+                        "cover_img": "https://img1.doubanio.com/mpic/s2768378.jpg"
+                    }
+                ],
+                "book_count": 1
             },
-            {
+            "11": {
                 "id": 2,
                 "name": "日语",
                 "user_id": 1,
@@ -83,14 +72,14 @@ response:
                         "cover_img": "https://img3.doubanio.com/mpic/s1070222.jpg"
                     },
                     {
-                        "id": 7,
-                        "title": "三体",
-                        "cover_img": "https://img1.doubanio.com/mpic/s2768378.jpg"
+                        "id": 44,
+                        "title": "高等数学下册讲义",
+                        "cover_img": "/public/static/img/180102_001.jpg"
                     }
                 ],
                 "book_count": 3
             }
-        ],
+        },
         "recent_learn": [
             {
                 "id": 1,
