@@ -2,8 +2,9 @@
 
 + [响应状态码](#响应状态码表)
 + 方法列表
-    + [周目标完成情况](#周目标完成情况)
-    + [个人全部统计(书籍)](#个人全部统计书籍)
+    + [连续学习时间周目标完成情况](#连续学习时间周目标完成情况)
+    + [合计(书籍))](#合计书籍)
+    + [周目标达成情况](#周目标达成情况)
 
 
 ### 响应状态码表
@@ -12,9 +13,9 @@
 | ------ | -------------- |
 | 333801 | 用户无学习记录 |
 
-### 周目标完成情况
+### 连续学习时间周目标完成情况
 
-uri: app1/report/week_stat
+uri: app1/report/continuous_days
 
 params:
 
@@ -23,7 +24,7 @@ params:
 | date | 日期 | 否   | string | 查询该日期所在周情况，例如：20180318 |
 
 请求示例：
-http://47.52.101.29/app1/report/week_stat?date=20180318
+http://47.52.101.29/app1/report/continuous_days?date=20180318
 
 response:
 
@@ -44,7 +45,7 @@ response:
                 "done": 3120,
                 "rate": 520
             },
-            "page": {
+            "pages": {
                 "goal": 300,
                 "done": 67,
                 "rate": 22
@@ -67,12 +68,12 @@ response 说明:
 | data.cur_week_stat.time.goal    | 目标学习时间         | 单位:分钟                         |
 | data.cur_week_stat.time.done    | 已学习时间           | 单位:分钟                         |
 | data.cur_week_stat.time.rate    | 占百分比             | int                               |
-| data.cur_week_stat.page.goal    | 目标学习页数         |                                   |
-| data.cur_week_stat.page.done    | 已学习页数           |                                   |
-| data.cur_week_stat.page.rate    | 占百分比             | int                               |
+| data.cur_week_stat.pages.goal   | 目标学习页数         |                                   |
+| data.cur_week_stat.pages.done   | 已学习页数           |                                   |
+| data.cur_week_stat.pages.rate   | 占百分比             | int                               |
 
 
-### 个人全部统计(书籍)
+### 合计(书籍)
 
 uri: app1/report/all_by_book
 
@@ -94,6 +95,250 @@ response:
     "code": 0,
     "msg": "ok",
     "data": {
+        "report": {
+            "sum": {
+                "page_count": 80,
+                "time_count": 3480
+            },
+            "day": {
+                "2018-02-11": {
+                    "sum": {
+                        "page_count": 7,
+                        "time_count": 0
+                    },
+                    "list": {
+                        "book": {
+                            "1": {
+                                "page_count": 7,
+                                "time_count": 0
+                            }
+                        },
+                        "category": {
+                            "2": {
+                                "page_count": 7,
+                                "time_count": 0
+                            }
+                        }
+                    }
+                },
+                "2018-03-05": {
+                    "sum": {
+                        "page_count": 4,
+                        "time_count": 0
+                    },
+                    "list": {
+                        "book": {
+                            "3": {
+                                "page_count": 4,
+                                "time_count": 0
+                            }
+                        },
+                        "category": {
+                            "2": {
+                                "page_count": 4,
+                                "time_count": 0
+                            }
+                        }
+                    }
+                },
+                "2018-03-11": {
+                    "sum": {
+                        "page_count": 2,
+                        "time_count": 360
+                    },
+                    "list": {
+                        "book": {
+                            "1": {
+                                "page_count": 2,
+                                "time_count": 360
+                            }
+                        },
+                        "category": {
+                            "2": {
+                                "page_count": 2,
+                                "time_count": 360
+                            }
+                        }
+                    }
+                },
+                "2018-03-12": {
+                    "sum": {
+                        "page_count": 55,
+                        "time_count": 960
+                    },
+                    "list": {
+                        "book": {
+                            "1": {
+                                "page_count": 55,
+                                "time_count": 960
+                            }
+                        },
+                        "category": {
+                            "2": {
+                                "page_count": 55,
+                                "time_count": 960
+                            }
+                        }
+                    }
+                },
+                "2018-03-18": {
+                    "sum": {
+                        "page_count": 12,
+                        "time_count": 2160
+                    },
+                    "list": {
+                        "book": {
+                            "1": {
+                                "page_count": 11,
+                                "time_count": 1980
+                            },
+                            "3": {
+                                "page_count": 1,
+                                "time_count": 180
+                            }
+                        },
+                        "category": {
+                            "2": {
+                                "page_count": 12,
+                                "time_count": 2160
+                            }
+                        }
+                    }
+                }
+            },
+            "week": {
+                "2018-06": {
+                    "sum": {
+                        "page_count": 7,
+                        "time_count": 0
+                    },
+                    "list": {
+                        "book": {
+                            "1": {
+                                "page_count": 7,
+                                "time_count": 0
+                            }
+                        },
+                        "category": {
+                            "2": {
+                                "page_count": 7,
+                                "time_count": 0
+                            }
+                        }
+                    }
+                },
+                "2018-10": {
+                    "sum": {
+                        "page_count": 6,
+                        "time_count": 360
+                    },
+                    "list": {
+                        "book": {
+                            "1": {
+                                "page_count": 2,
+                                "time_count": 360
+                            },
+                            "3": {
+                                "page_count": 4,
+                                "time_count": 0
+                            }
+                        },
+                        "category": {
+                            "2": {
+                                "page_count": 6,
+                                "time_count": 360
+                            }
+                        }
+                    }
+                },
+                "2018-11": {
+                    "sum": {
+                        "page_count": 67,
+                        "time_count": 3120
+                    },
+                    "list": {
+                        "book": {
+                            "1": {
+                                "page_count": 66,
+                                "time_count": 2940
+                            },
+                            "3": {
+                                "page_count": 1,
+                                "time_count": 180
+                            }
+                        },
+                        "category": {
+                            "2": {
+                                "page_count": 67,
+                                "time_count": 3120
+                            }
+                        }
+                    }
+                }
+            },
+            "month": {
+                "2018-02": {
+                    "sum": {
+                        "page_count": 7,
+                        "time_count": 0
+                    },
+                    "list": {
+                        "book": {
+                            "1": {
+                                "page_count": 7,
+                                "time_count": 0
+                            }
+                        },
+                        "category": {
+                            "2": {
+                                "page_count": 7,
+                                "time_count": 0
+                            }
+                        }
+                    }
+                },
+                "2018-03": {
+                    "sum": {
+                        "page_count": 73,
+                        "time_count": 3480
+                    },
+                    "list": {
+                        "book": {
+                            "1": {
+                                "page_count": 68,
+                                "time_count": 3300
+                            },
+                            "3": {
+                                "page_count": 5,
+                                "time_count": 180
+                            }
+                        },
+                        "category": {
+                            "2": {
+                                "page_count": 73,
+                                "time_count": 3480
+                            }
+                        }
+                    }
+                }
+            },
+            "book": {
+                "1": {
+                    "page_count": 75,
+                    "time_count": 3300
+                },
+                "3": {
+                    "page_count": 5,
+                    "time_count": 180
+                }
+            },
+            "category": {
+                "2": {
+                    "page_count": 80,
+                    "time_count": 3480
+                }
+            }
+        },
         "book": {
             "1": {
                 "id": 1,
@@ -109,224 +354,129 @@ response:
                 "ctime": 0,
                 "user_id": null
             },
-            "2": {
-                "id": 2,
-                "title": "PHP7内核剖析",
-                "isbn": 9787121328107,
-                "cover_img": "https://img3.doubanio.com/mpic/s29607420.jpg",
-                "author_first": "秦朋",
-                "author_all": "[\"\\u79e6\\u670b\"]",
-                "publisher": "电子工业出版社",
-                "pubdate": "2017-10-1",
-                "douban_id": 27197032,
+            "3": {
+                "id": 3,
+                "title": "钢铁是怎样炼成的（教育部新编语文教材推荐阅读书系）",
+                "isbn": 9787535497239,
+                "cover_img": "https://img1.doubanio.com/mpic/s29639427.jpg",
+                "author_first": "尼古拉·奥斯特洛夫斯基",
+                "author_all": "[\"\\u5c3c\\u53e4\\u62c9\\u00b7\\u5965\\u65af\\u7279\\u6d1b\\u592b\\u65af\\u57fa\"]",
+                "publisher": "长江文艺出版社",
+                "pubdate": "2018-1",
+                "douban_id": 27604699,
                 "pages": 0,
                 "ctime": 0,
                 "user_id": null
             }
-        },
-        "pack": {
-            "sum": {
-                "page_count": 93,
-                "time_count": 3480
-            },
-            "book": {
-                "0": {
-                    "page_count": -2,
-                    "time_count": 0
+        }
+    }
+}
+```
+
+response 说明:
+
+|                         字段                        |     名称     |                    说明                    |
+| --------------------------------------------------- | ------------ | :----------------------------------------- |
+| code                                                | 状态码       | 0:正常,其余见[响应状态码表](#响应状态码表) |
+| msg                                                 | 消息         | 请求正常为"ok",否则为详细错误信息          |
+| data.report.book                                    | 书籍         | 同书籍详情                                 |
+| data.report.sum.page_count                          | 学习页数合计 | 从注册开始                                 |
+| data.report.sum.time_count                          | 学习时间合计 | 从注册开始，单位:分钟                      |
+| data.report.book.(书籍id).page_count                | 学习页数合计 | 当前书籍，key为书籍id                      |
+| data.report.book.(书籍id).time_count                | 学习时间合计 | 当前书籍，key为书籍id                      |
+| data.report.category.(分类id).page_count            | 学习页数合计 | 当前书籍，key为分类id                      |
+| data.report.category.(分类id).time_count            | 学习时间合计 | 当前书籍，key为分类id                      |
+| data.report.day.(日期).sum.page_count               | 学习页数合计 | 当天学习页数合计                           |
+| data.report.day.(日期).sum.time_count               | 学习时间合计 | 当天学习时间合计                           |
+| data.report.day.(日期).book.(书籍id).page_count     | 学习页数合计 | 当天单本书学习页数合计                     |
+| data.report.day.(日期).book.(书籍id).time_count     | 学习时间合计 | 当天单本书学习时间合计                     |
+| data.report.day.(日期).category.(分类id).page_count | 学习页数合计 | 当天单分类学习页数合计                     |
+| data.report.day.(日期).category.(分类id).time_count | 学习时间合计 | 当天单分类学习时间合计                     |
+| data.report.week.(第几周).*                         |              | 结构同单天，例如：2018-06 为2018年第6周    |
+| data.report.month.(月份).*                          |              | 结构同单天，例如：2018-02为2018年2月份     |
+
+
+
+### 周目标达成情况
+
+uri: app1/report/week_report
+
+params:
+
+|  变量 |   名称   | 必填 |  类型  |                      描述                      |
+| ----- | -------- | ---- | ------ | ---------------------------------------------- |
+| btime | 开始时间 | 否   | string | 筛选周期内的学习记录，开始时间，例如：20180301 |
+| etime | 结束时间 | 否   | string | 结束时间                                       |
+
+请求示例：
+http://47.52.101.29/app1/report/week_report?btime=20180301&etime=20180401
+
+response:
+
+```json
+{
+    "code": 0,
+    "msg": "ok",
+    "data": {
+        "report": {
+            "2018-09": {
+                "time": {
+                    "goal": 0,
+                    "done": 0,
+                    "rate": 0
                 },
-                "1": {
-                    "page_count": 75,
-                    "time_count": 3300
-                },
-                "2": {
-                    "page_count": 19,
-                    "time_count": 0
-                },
-                "5": {
-                    "page_count": 1,
-                    "time_count": 180
+                "pages": {
+                    "goal": 0,
+                    "done": 0,
+                    "rate": 0
                 }
             },
-            "day": {
-                "2018-01-05": {
-                    "list": {
-                        "2": {
-                            "page_count": 19,
-                            "time_count": 0
-                        }
-                    },
-                    "sum": {
-                        "page_count": 19,
-                        "time_count": 0
-                    }
+            "2018-10": {
+                "time": {
+                    "goal": 600,
+                    "done": 360,
+                    "rate": 60
                 },
-                "2018-02-11": {
-                    "list": {
-                        "1": {
-                            "page_count": 7,
-                            "time_count": 0
-                        }
-                    },
-                    "sum": {
-                        "page_count": 7,
-                        "time_count": 0
-                    }
-                },
-                "2018-03-05": {
-                    "list": [
-                        {
-                            "page_count": -2,
-                            "time_count": 0
-                        }
-                    ],
-                    "sum": {
-                        "page_count": -2,
-                        "time_count": 0
-                    }
-                },
-                "2018-03-11": {
-                    "list": {
-                        "1": {
-                            "page_count": 2,
-                            "time_count": 360
-                        }
-                    },
-                    "sum": {
-                        "page_count": 2,
-                        "time_count": 360
-                    }
-                },
-                "2018-03-12": {
-                    "list": {
-                        "1": {
-                            "page_count": 55,
-                            "time_count": 960
-                        }
-                    },
-                    "sum": {
-                        "page_count": 55,
-                        "time_count": 960
-                    }
-                },
-                "2018-03-18": {
-                    "list": {
-                        "1": {
-                            "page_count": 11,
-                            "time_count": 1980
-                        },
-                        "5": {
-                            "page_count": 1,
-                            "time_count": 180
-                        }
-                    },
-                    "sum": {
-                        "page_count": 12,
-                        "time_count": 2160
-                    }
+                "pages": {
+                    "goal": 300,
+                    "done": 6,
+                    "rate": 2
                 }
             },
-            "week": {
-                "2018-01": {
-                    "list": {
-                        "2": {
-                            "page_count": 19,
-                            "time_count": 0
-                        }
-                    },
-                    "sum": {
-                        "page_count": 19,
-                        "time_count": 0
-                    }
+            "2018-11": {
+                "time": {
+                    "goal": 600,
+                    "done": 3120,
+                    "rate": 520
                 },
-                "2018-06": {
-                    "list": {
-                        "1": {
-                            "page_count": 7,
-                            "time_count": 0
-                        }
-                    },
-                    "sum": {
-                        "page_count": 7,
-                        "time_count": 0
-                    }
-                },
-                "2018-10": {
-                    "list": [
-                        {
-                            "page_count": -2,
-                            "time_count": 0
-                        },
-                        {
-                            "page_count": 2,
-                            "time_count": 360
-                        }
-                    ],
-                    "sum": {
-                        "page_count": 0,
-                        "time_count": 360
-                    }
-                },
-                "2018-11": {
-                    "list": {
-                        "1": {
-                            "page_count": 66,
-                            "time_count": 2940
-                        },
-                        "5": {
-                            "page_count": 1,
-                            "time_count": 180
-                        }
-                    },
-                    "sum": {
-                        "page_count": 67,
-                        "time_count": 3120
-                    }
+                "pages": {
+                    "goal": 300,
+                    "done": 67,
+                    "rate": 22
                 }
             },
-            "month": {
-                "2018-01": {
-                    "list": {
-                        "2": {
-                            "page_count": 19,
-                            "time_count": 0
-                        }
-                    },
-                    "sum": {
-                        "page_count": 19,
-                        "time_count": 0
-                    }
+            "2018-12": {
+                "time": {
+                    "goal": 0,
+                    "done": 0,
+                    "rate": 0
                 },
-                "2018-02": {
-                    "list": {
-                        "1": {
-                            "page_count": 7,
-                            "time_count": 0
-                        }
-                    },
-                    "sum": {
-                        "page_count": 7,
-                        "time_count": 0
-                    }
+                "pages": {
+                    "goal": 0,
+                    "done": 0,
+                    "rate": 0
+                }
+            },
+            "2018-13": {
+                "time": {
+                    "goal": 0,
+                    "done": 0,
+                    "rate": 0
                 },
-                "2018-03": {
-                    "list": {
-                        "0": {
-                            "page_count": -2,
-                            "time_count": 0
-                        },
-                        "1": {
-                            "page_count": 68,
-                            "time_count": 3300
-                        },
-                        "5": {
-                            "page_count": 1,
-                            "time_count": 180
-                        }
-                    },
-                    "sum": {
-                        "page_count": 67,
-                        "time_count": 3480
-                    }
+                "pages": {
+                    "goal": 0,
+                    "done": 0,
+                    "rate": 0
                 }
             }
         }
@@ -336,19 +486,13 @@ response:
 
 response 说明:
 
-|                字段                |     名称     |                    说明                    |
-| ---------------------------------- | ------------ | :----------------------------------------- |
-| code                               | 状态码       | 0:正常,其余见[响应状态码表](#响应状态码表) |
-| msg                                | 消息         | 请求正常为"ok",否则为详细错误信息          |
-| data.book                          | 书籍         | 同书籍详情                                 |
-| data.pack.sum.page_count           | 学习页数合计 | 从注册开始                                 |
-| data.pack.sum.time_count           | 学习时间合计 | 从注册开始，单位:分钟                      |
-| data.pack.book.(书籍id).page_count | 学习页数合计 | 当前书籍，key为书籍id                      |
-| data.pack.book.(书籍id).time_count | 学习时间合计 | 当前书籍，key为书籍id                      |
-| data.pack.day.(日期).page_count    |              |                                            |
-| data.pack.day.(日期).time_count    |              |                                            |
-| data.pack.week.(第几周).page_count |              | 年-周序号                                  |
-| data.pack.week.(第几周).time_count |              |                                            |
-| data.pack.month.(月份).page_count  |              |                                            |
-| data.pack.month.(月份).time_count  |              |                                            |
-
+|                字段                |     名称     |                说明               |
+| ---------------------------------- | ------------ | --------------------------------- |
+| code                               | 状态码       | 0:正常                            |
+| msg                                | 消息         | 请求正常为"ok",否则为详细错误信息 |
+| data.report.(年-周序号).time.goal  | 目标学习时间 | 单位:分钟                         |
+| data.report.(年-周序号).time.done  | 已学习时间   | 单位:分钟                         |
+| data.report.(年-周序号).time.rate  | 占百分比     | int                               |
+| data.report.(年-周序号).pages.goal | 目标学习页数 |                                   |
+| data.report.(年-周序号).pages.done | 已学习页数   |                                   |
+| data.report.(年-周序号).pages.rate | 占百分比     | int                               |
