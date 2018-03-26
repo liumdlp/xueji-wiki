@@ -79,11 +79,11 @@ params:
 
 |  变量 |   名称   | 必填 | 类型 |                     描述                    |
 | ----- | -------- | ---- | ---- | ------------------------------------------- |
-| bdate | 开始日期 | 是   | int  | 例如20180201                                |
+| bdate | 开始日期 | 是   | int  | 例如20180206                                |
 | range | 查询长度 | 是   | int  | 从开始日期开始要查询多少天，默认为一星期(7) |
 
 
-请求示例：http://47.52.101.29/app1/review/range?bdate=20180201&range=7
+请求示例：http://47.52.101.29/app1/review/range?bdate=20180206&range=7
 
 
 response:
@@ -92,113 +92,94 @@ response:
 {
     "code": 0,
     "msg": "ok",
-    "data": {
-        "20180201": [],
-        "20180202": [
-            {
-                "book": {
-                    "id": 1,
-                    "title": "围城",
-                    "cover_img": "https://img3.doubanio.com/mpic/s1070222.jpg"
+    "data": [
+        {
+            "date": 20180207,
+            "content": []
+        },
+        {
+            "date": 20180208,
+            "content": []
+        },
+        {
+            "date": 20180209,
+            "content": []
+        },
+        {
+            "date": 20180210,
+            "content": []
+        },
+        {
+            "date": 20180211,
+            "content": []
+        },
+        {
+            "date": 20180212,
+            "content": []
+        },
+        {
+            "date": 20180213,
+            "content": [
+                {
+                    "bookid": 1,
+                    "booktitle": "围城",
+                    "bookcover_img": "https://img3.doubanio.com/mpic/s1070222.jpg",
+                    "learnid": 7,
+                    "learnreminder": "记得好好复习第3行",
+                    "learnbeg_page": 10,
+                    "learnend_page": 11,
+                    "reviewid": 3,
+                    "reviewstep": 7,
+                    "reviewtime": "2018-02-13 14:50:00",
+                    "reviewhm": "14:50"
                 },
-                "learn": {
-                    "id": 7,
-                    "reminder": "记得好好复习第3行",
-                    "beg_page": 10,
-                    "end_page": 11
+                {
+                    "bookid": 1,
+                    "booktitle": "围城",
+                    "bookcover_img": "https://img3.doubanio.com/mpic/s1070222.jpg",
+                    "learnid": 8,
+                    "learnreminder": " 又学习了一条",
+                    "learnbeg_page": 92,
+                    "learnend_page": 93,
+                    "reviewid": 4,
+                    "reviewstep": 7,
+                    "reviewtime": "2018-02-13 14:50:00",
+                    "reviewhm": "14:50"
                 },
-                "review": {
-                    "id": 3,
-                    "step": 5,
-                    "time": "2018-02-03 14:50:00",
-                    "hm": "14:50"
+                {
+                    "bookid": 1,
+                    "booktitle": "围城",
+                    "bookcover_img": "https://img3.doubanio.com/mpic/s1070222.jpg",
+                    "learnid": 11,
+                    "learnreminder": "记得好好复习第三行",
+                    "learnbeg_page": 10,
+                    "learnend_page": 11,
+                    "reviewid": 5,
+                    "reviewstep": 7,
+                    "reviewtime": "2018-02-13 22:50:00",
+                    "reviewhm": "22:50"
                 }
-            },
-            {
-                "book": {
-                    "id": 1,
-                    "title": "围城",
-                    "cover_img": "https://img3.doubanio.com/mpic/s1070222.jpg"
-                },
-                "learn": {
-                    "id": 8,
-                    "reminder": " 又学习了一条",
-                    "beg_page": 92,
-                    "end_page": 93
-                },
-                "review": {
-                    "id": 4,
-                    "step": 5,
-                    "time": "2018-02-03 14:50:00",
-                    "hm": "14:50"
-                }
-            }
-        ],
-        "20180204": [],
-        "20180207": [
-            {
-                "book": {
-                    "id": 1,
-                    "title": "围城",
-                    "cover_img": "https://img3.doubanio.com/mpic/s1070222.jpg"
-                },
-                "learn": {
-                    "id": 7,
-                    "reminder": "记得好好复习第3行",
-                    "beg_page": 10,
-                    "end_page": 11
-                },
-                "review": {
-                    "id": 3,
-                    "step": 6,
-                    "time": "2018-02-05 14:50:00",
-                    "hm": "14:50"
-                }
-            },
-            {
-                "book": {
-                    "id": 1,
-                    "title": "围城",
-                    "cover_img": "https://img3.doubanio.com/mpic/s1070222.jpg"
-                },
-                "learn": {
-                    "id": 8,
-                    "reminder": " 又学习了一条",
-                    "beg_page": 92,
-                    "end_page": 93
-                },
-                "review": {
-                    "id": 4,
-                    "step": 6,
-                    "time": "2018-02-05 14:50:00",
-                    "hm": "14:50"
-                }
-            }
-        ],
-        "20180211": [],
-        "20180216": [],
-        "20180222": []
-    }
+            ]
+        }
+    ]
 }
 ```
 
 response 说明:
 
-|           字段           |     名称     |                    说明                    |
-| ------------------------ | ------------ | ------------------------------------------ |
-| code                     | 状态码       | 0:正常,其余见[响应状态码表](#响应状态码表) |
-| msg                      | 消息         | 请求正常为"ok",否则为详细错误信息          |
-| data.日期.book           | 书籍信息     |                                            |
-| data.日期.book.id        | 书籍id       |                                            |
-| data.日期.book.title     | 书名         |                                            |
-| data.日期.book.cover_img | 封面图片     |                                            |
-| data.日期.learn          | 学习记录     |                                            |
-| data.日期.learn.id       | 学习记录id   |                                            |
-| data.日期.learn.reminder | 复习备注     |                                            |
-| data.日期.learn.beg_page | 学习开始页码 |                                            |
-| data.日期.learn.end_page | 学习结束页码 |                                            |
-| data.日期.review         | 复习记录     |                                            |
-| data.日期.review.id      | 复习id       |                                            |
-| data.日期.review.step    | 复习阶段     |                                            |
-| data.日期.review.time    | 复习提醒时间 | 也是复习开始时间                           |
-| data.日期.review.hm      | 时间         | 截取的   小时:分钟                         |
+|             字段             |     名称     |                    说明                    |
+| ---------------------------- | ------------ | ------------------------------------------ |
+| code                         | 状态码       | 0:正常,其余见[响应状态码表](#响应状态码表) |
+| msg                          | 消息         | 请求正常为"ok",否则为详细错误信息          |
+| data[].date                  | 日期         |                                            |
+| data[].content.bookid        | 书籍id       |                                            |
+| data[].content.booktitle     | 书名         |                                            |
+| data[].content.bookcover_img | 封面图片     |                                            |
+| data[].content.learnid       | 学习记录id   |                                            |
+| data[].content.learnreminder | 复习备注     |                                            |
+| data[].content.learnbeg_page | 学习开始页码 |                                            |
+| data[].content.learnend_page | 学习结束页码 |                                            |
+| data[].content.reviewid      | 复习纪录id   |                                            |
+| data[].content.reviewstep    | 复习阶段     |                                            |
+| data[].content.reviewtime    | 复习提醒时间 | 也是复习开始时间                           |
+| data[].content.reviewhm      | 时间         | 截取的   小时:分钟                         |
