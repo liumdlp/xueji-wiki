@@ -100,244 +100,261 @@ response:
                 "page_count": 80,
                 "time_count": 3480
             },
-            "day": {
-                "2018-02-11": {
+            "book": [
+                {
+                    "id": 1,
+                    "page_count": 75,
+                    "time_count": 3300
+                },
+                {
+                    "id": 3,
+                    "page_count": 5,
+                    "time_count": 180
+                }
+            ],
+            "category": [
+                {
+                    "id": 2,
+                    "page_count": 80,
+                    "time_count": 3480
+                }
+            ],
+            "day": [
+                {
+                    "day": "2018-02-11",
                     "sum": {
                         "page_count": 7,
                         "time_count": 0
                     },
-                    "list": {
-                        "book": {
-                            "1": {
-                                "page_count": 7,
-                                "time_count": 0
-                            }
-                        },
-                        "category": {
-                            "2": {
-                                "page_count": 7,
-                                "time_count": 0
-                            }
+                    "book": [
+                        {
+                            "page_count": 7,
+                            "time_count": 0,
+                            "id": 1
                         }
-                    }
+                    ],
+                    "category": [
+                        {
+                            "page_count": 7,
+                            "time_count": 0,
+                            "id": 2
+                        }
+                    ]
                 },
-                "2018-03-05": {
+                {
+                    "day": "2018-03-05",
                     "sum": {
                         "page_count": 4,
                         "time_count": 0
                     },
-                    "list": {
-                        "book": {
-                            "3": {
-                                "page_count": 4,
-                                "time_count": 0
-                            }
-                        },
-                        "category": {
-                            "2": {
-                                "page_count": 4,
-                                "time_count": 0
-                            }
+                    "book": [
+                        {
+                            "page_count": 4,
+                            "time_count": 0,
+                            "id": 3
                         }
-                    }
+                    ],
+                    "category": [
+                        {
+                            "page_count": 4,
+                            "time_count": 0,
+                            "id": 2
+                        }
+                    ]
                 },
-                "2018-03-11": {
+                {
+                    "day": "2018-03-11",
                     "sum": {
                         "page_count": 2,
                         "time_count": 360
                     },
-                    "list": {
-                        "book": {
-                            "1": {
-                                "page_count": 2,
-                                "time_count": 360
-                            }
-                        },
-                        "category": {
-                            "2": {
-                                "page_count": 2,
-                                "time_count": 360
-                            }
+                    "book": [
+                        {
+                            "page_count": 2,
+                            "time_count": 360,
+                            "id": 1
                         }
-                    }
+                    ],
+                    "category": [
+                        {
+                            "page_count": 2,
+                            "time_count": 360,
+                            "id": 2
+                        }
+                    ]
                 },
-                "2018-03-12": {
+                {
+                    "day": "2018-03-12",
                     "sum": {
                         "page_count": 55,
                         "time_count": 960
                     },
-                    "list": {
-                        "book": {
-                            "1": {
-                                "page_count": 55,
-                                "time_count": 960
-                            }
-                        },
-                        "category": {
-                            "2": {
-                                "page_count": 55,
-                                "time_count": 960
-                            }
+                    "book": [
+                        {
+                            "page_count": 55,
+                            "time_count": 960,
+                            "id": 1
                         }
-                    }
+                    ],
+                    "category": [
+                        {
+                            "page_count": 55,
+                            "time_count": 960,
+                            "id": 2
+                        }
+                    ]
                 },
-                "2018-03-18": {
+                {
+                    "day": "2018-03-18",
                     "sum": {
                         "page_count": 12,
                         "time_count": 2160
                     },
-                    "list": {
-                        "book": {
-                            "1": {
-                                "page_count": 11,
-                                "time_count": 1980
-                            },
-                            "3": {
-                                "page_count": 1,
-                                "time_count": 180
-                            }
+                    "book": [
+                        {
+                            "page_count": 11,
+                            "time_count": 1980,
+                            "id": 1
                         },
-                        "category": {
-                            "2": {
-                                "page_count": 12,
-                                "time_count": 2160
-                            }
+                        {
+                            "page_count": 1,
+                            "time_count": 180,
+                            "id": 3
                         }
-                    }
+                    ],
+                    "category": [
+                        {
+                            "page_count": 12,
+                            "time_count": 2160,
+                            "id": 2
+                        }
+                    ]
                 }
-            },
-            "week": {
-                "2018-06": {
+            ],
+            "week": [
+                {
+                    "week": "2018-06",
                     "sum": {
                         "page_count": 7,
                         "time_count": 0
                     },
-                    "list": {
-                        "book": {
-                            "1": {
-                                "page_count": 7,
-                                "time_count": 0
-                            }
-                        },
-                        "category": {
-                            "2": {
-                                "page_count": 7,
-                                "time_count": 0
-                            }
+                    "book": [
+                        {
+                            "page_count": 7,
+                            "time_count": 0,
+                            "id": 1
                         }
-                    }
+                    ],
+                    "category": [
+                        {
+                            "page_count": 7,
+                            "time_count": 0,
+                            "id": 2
+                        }
+                    ]
                 },
-                "2018-10": {
+                {
+                    "week": "2018-10",
                     "sum": {
                         "page_count": 6,
                         "time_count": 360
                     },
-                    "list": {
-                        "book": {
-                            "1": {
-                                "page_count": 2,
-                                "time_count": 360
-                            },
-                            "3": {
-                                "page_count": 4,
-                                "time_count": 0
-                            }
+                    "book": [
+                        {
+                            "page_count": 4,
+                            "time_count": 0,
+                            "id": 3
                         },
-                        "category": {
-                            "2": {
-                                "page_count": 6,
-                                "time_count": 360
-                            }
+                        {
+                            "page_count": 2,
+                            "time_count": 360,
+                            "id": 1
                         }
-                    }
+                    ],
+                    "category": [
+                        {
+                            "page_count": 6,
+                            "time_count": 360,
+                            "id": 2
+                        }
+                    ]
                 },
-                "2018-11": {
+                {
+                    "week": "2018-11",
                     "sum": {
                         "page_count": 67,
                         "time_count": 3120
                     },
-                    "list": {
-                        "book": {
-                            "1": {
-                                "page_count": 66,
-                                "time_count": 2940
-                            },
-                            "3": {
-                                "page_count": 1,
-                                "time_count": 180
-                            }
+                    "book": [
+                        {
+                            "page_count": 66,
+                            "time_count": 2940,
+                            "id": 1
                         },
-                        "category": {
-                            "2": {
-                                "page_count": 67,
-                                "time_count": 3120
-                            }
+                        {
+                            "page_count": 1,
+                            "time_count": 180,
+                            "id": 3
                         }
-                    }
+                    ],
+                    "category": [
+                        {
+                            "page_count": 67,
+                            "time_count": 3120,
+                            "id": 2
+                        }
+                    ]
                 }
-            },
-            "month": {
-                "2018-02": {
+            ],
+            "month": [
+                {
+                    "month": "2018-02",
                     "sum": {
                         "page_count": 7,
                         "time_count": 0
                     },
-                    "list": {
-                        "book": {
-                            "1": {
-                                "page_count": 7,
-                                "time_count": 0
-                            }
-                        },
-                        "category": {
-                            "2": {
-                                "page_count": 7,
-                                "time_count": 0
-                            }
+                    "book": [
+                        {
+                            "page_count": 7,
+                            "time_count": 0,
+                            "id": 1
                         }
-                    }
+                    ],
+                    "category": [
+                        {
+                            "page_count": 7,
+                            "time_count": 0,
+                            "id": 2
+                        }
+                    ]
                 },
-                "2018-03": {
+                {
+                    "month": "2018-03",
                     "sum": {
                         "page_count": 73,
                         "time_count": 3480
                     },
-                    "list": {
-                        "book": {
-                            "1": {
-                                "page_count": 68,
-                                "time_count": 3300
-                            },
-                            "3": {
-                                "page_count": 5,
-                                "time_count": 180
-                            }
+                    "book": [
+                        {
+                            "page_count": 5,
+                            "time_count": 180,
+                            "id": 3
                         },
-                        "category": {
-                            "2": {
-                                "page_count": 73,
-                                "time_count": 3480
-                            }
+                        {
+                            "page_count": 68,
+                            "time_count": 3300,
+                            "id": 1
                         }
-                    }
+                    ],
+                    "category": [
+                        {
+                            "page_count": 73,
+                            "time_count": 3480,
+                            "id": 2
+                        }
+                    ]
                 }
-            },
-            "book": {
-                "1": {
-                    "page_count": 75,
-                    "time_count": 3300
-                },
-                "3": {
-                    "page_count": 5,
-                    "time_count": 180
-                }
-            },
-            "category": {
-                "2": {
-                    "page_count": 80,
-                    "time_count": 3480
-                }
-            }
+            ]
         },
         "book": {
             "1": {
@@ -368,6 +385,17 @@ response:
                 "ctime": 0,
                 "user_id": null
             }
+        },
+        "category": {
+            "2": {
+                "id": 2,
+                "name": "日语",
+                "user_id": 1,
+                "ctime": 1513569372,
+                "utime": 1513569372,
+                "is_deleted": 0,
+                "sort": 2
+            }
         }
     }
 }
@@ -375,25 +403,36 @@ response:
 
 response 说明:
 
-|                         字段                        |     名称     |                    说明                    |
-| --------------------------------------------------- | ------------ | :----------------------------------------- |
-| code                                                | 状态码       | 0:正常,其余见[响应状态码表](#响应状态码表) |
-| msg                                                 | 消息         | 请求正常为"ok",否则为详细错误信息          |
-| data.report.book                                    | 书籍         | 同书籍详情                                 |
-| data.report.sum.page_count                          | 学习页数合计 | 从注册开始                                 |
-| data.report.sum.time_count                          | 学习时间合计 | 从注册开始，单位:分钟                      |
-| data.report.book.(书籍id).page_count                | 学习页数合计 | 当前书籍，key为书籍id                      |
-| data.report.book.(书籍id).time_count                | 学习时间合计 | 当前书籍，key为书籍id                      |
-| data.report.category.(分类id).page_count            | 学习页数合计 | 当前书籍，key为分类id                      |
-| data.report.category.(分类id).time_count            | 学习时间合计 | 当前书籍，key为分类id                      |
-| data.report.day.(日期).sum.page_count               | 学习页数合计 | 当天学习页数合计                           |
-| data.report.day.(日期).sum.time_count               | 学习时间合计 | 当天学习时间合计                           |
-| data.report.day.(日期).book.(书籍id).page_count     | 学习页数合计 | 当天单本书学习页数合计                     |
-| data.report.day.(日期).book.(书籍id).time_count     | 学习时间合计 | 当天单本书学习时间合计                     |
-| data.report.day.(日期).category.(分类id).page_count | 学习页数合计 | 当天单分类学习页数合计                     |
-| data.report.day.(日期).category.(分类id).time_count | 学习时间合计 | 当天单分类学习时间合计                     |
-| data.report.week.(第几周).*                         |              | 结构同单天，例如：2018-06 为2018年第6周    |
-| data.report.month.(月份).*                          |              | 结构同单天，例如：2018-02为2018年2月份     |
+|                 字段                |     名称     |                    说明                    |
+| ----------------------------------- | ------------ | :----------------------------------------- |
+| code                                | 状态码       | 0:正常,其余见[响应状态码表](#响应状态码表) |
+| msg                                 | 消息         | 请求正常为"ok",否则为详细错误信息          |
+| 匹配信息部分，书籍详情&&分类详情    |              |                                            |
+| data.report.book                    | 书籍         | 同书籍详情                                 |
+| data.report.category                | 分类         | 同分类详情                                 |
+| 合计部分                            |              |                                            |
+| data.report.sum.page_count          | 学习页数合计 | 从注册开始                                 |
+| data.report.sum.time_count          | 学习时间合计 | 从注册开始，单位:分钟                      |
+| data.report.book.id                 | 书籍id       |                                            |
+| data.report.book.page_count         | 学习页数合计 |                                            |
+| data.report.book.time_count         | 学习时间合计 |                                            |
+| data.report.category.id             | 分类id       | 指定分类id会出现                           |
+| data.report.category.page_count     | 学习页数合计 |                                            |
+| data.report.category.time_count     | 学习时间合计 |                                            |
+| 分天计算                            |              |                                            |
+| data.report.day.day                 | 日期         |                                            |
+| data.report.day.sum.page_count      | 学习页数合计 | 当天学习页数合计                           |
+| data.report.day.sum.time_count      | 学习时间合计 | 当天学习时间合计                           |
+| data.report.day.book.id             | 书籍id       |                                            |
+| data.report.day.book.page_count     | 学习页数合计 | 当天单本书学习页数合计                     |
+| data.report.day.book.time_count     | 学习时间合计 | 当天单本书学习时间合计                     |
+| data.report.day.category.id         | 分类id       | 当天单分类学习页数合计                     |
+| data.report.day.category.page_count | 学习页数合计 | 当天单分类学习页数合计                     |
+| data.report.day.category.time_count | 学习时间合计 | 当天单分类学习时间合计                     |
+| 分周部分                            |              |                                            |
+| data.report.week.*                  |              | 结构同单天，例如：2018-06 为2018年第6周    |
+| 分月部分                            |              |                                            |
+| data.report.month.*                 |              | 结构同单天，例如：2018-02为2018年2月份     |
 
 
 
