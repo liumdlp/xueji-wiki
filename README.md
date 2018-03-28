@@ -6,36 +6,36 @@
 
 ### 方法列表
 
-| 类别 |                   方法名                   |              uri               |    说明    |
-| ---- | ------------------------------------------ | ------------------------------ | ---------- |
-| 分类 | \-                                         | \-                             | \-         |
-| \-   | [列表](category.md#列表)                   | ```/app1/category/list```      |            |
-| \-   | [添加](category.md#添加)                   | ```/app1/category/add```       |            |
-| \-   | [排序](category.md#排序)                   | ```/app1/category/sort```      |            |
-| 书籍 | \-                                         | \-                             | \-         |
-| \-   | [isbn添加](book.md#isbn添加)               | ```/app1/book/add```           |            |
-| \-   | [自定义添加](book.md#自定义添加)           | ```/app1/book/add_custom```    |            |
-| \-   | [详情](book.md#详情)                       | ```/app1/book/detail```        |            |
-| 用户 | \-                                         | \-                             | \-         |
-| \-   | [登录](user.md#登录)                       | ```/app1/user/login```         |            |
-| \-   | [登出(TODO)](user.md#todo登出)             | ```/app1/user/logout```        |            |
-| \-   | [静默注册](user.md#静默注册)               | ```/app1/user/ssign_up```      |            |
-| \-   | [详情](user.md#详情)                       | ```/app1/user/profile```       |            |
-| \-   | [设置](user.md#设置)                       | ```/app1/user/setting```       |            |
-| 学习 | \-                                         | \-                             | \-         |
-| \-   | [记录](learn.md#记录)                      | ```/app1/learn/log```          |            |
-| \-   | [设置周目标](learn.md#设置周目标)          | ```/app1/learn/week_goal```    |            |
-| 主页 | \-                                         | \-                             | \-         |
-| \-   | [主页](main.md#主页)                       | ```/app1/main/index```         |            |
-| 传图 | \-                                         | \-                             | \-         |
-| \-   | [传图](upload.md#传图)                     | ```/app1/upload/index```       |            |
-| 复习 | \-                                         | \-                             | \-         |
-| \-   | [详情](review.md#详情)                     | ```/app1/review/detail```      |            |
-| \-   | [列表(指定天数)](review.md#列表指定天数)   | ```/app1/review/range```       |            |
-| 统计 | \-                                         | \-                             | \-         |
-| \-   | [连续学习时间周目标完成情况](report.md#连续学习时间周目标完成情况) | ```/app1/report/continuous_days``` |            |
-| \-   | [合计(书籍)](report.md#合计书籍)           | ```/app1/report/all_by_book``` |            |
-| \-   | [周目标达成情况](report.md#周目标达成情况) | ```/app1/report/week_report``` |            |
+| 类别 |                               方法名                               |                uri                 | 说明 |
+| ---- | ------------------------------------------------------------------ | ---------------------------------- | ---- |
+| 分类 | [category](category.md)                                            | \-                                 |      |
+| \-   | [列表](category.md#列表)                                           | ```/app1/category/list```          |      |
+| \-   | [添加](category.md#添加)                                           | ```/app1/category/add```           |      |
+| \-   | [排序](category.md#排序)                                           | ```/app1/category/sort```          |      |
+| 书籍 | [book](book.md)                                                    | \-                                 |      |
+| \-   | [isbn添加](book.md#isbn添加)                                       | ```/app1/book/add```               |      |
+| \-   | [自定义添加](book.md#自定义添加)                                   | ```/app1/book/add_custom```        |      |
+| \-   | [详情](book.md#详情)                                               | ```/app1/book/detail```            |      |
+| 用户 | [user](user.md)                                                    | \-                                 |      |
+| \-   | [登录](user.md#登录)                                               | ```/app1/user/login```             |      |
+| \-   | [登出(TODO)](user.md#todo登出)                                     | ```/app1/user/logout```            |      |
+| \-   | [静默注册](user.md#静默注册)                                       | ```/app1/user/ssign_up```          |      |
+| \-   | [详情](user.md#详情)                                               | ```/app1/user/profile```           |      |
+| \-   | [设置](user.md#设置)                                               | ```/app1/user/setting```           |      |
+| 学习 | [learn](learn.md)                                                  | \-                                 |      |
+| \-   | [记录](learn.md#记录)                                              | ```/app1/learn/log```              |      |
+| \-   | [设置周目标](learn.md#设置周目标)                                  | ```/app1/learn/week_goal```        |      |
+| 主页 | [main](main.md)                                                    | \-                                 |      |
+| \-   | [主页](main.md#主页)                                               | ```/app1/main/index```             |      |
+| 传图 | [upload](upload.md)                                                | \-                                 |      |
+| \-   | [传图](upload.md#传图)                                             | ```/app1/upload/index```           |      |
+| 复习 | [review](review.md)                                                | \-                                 |      |
+| \-   | [详情](review.md#详情)                                             | ```/app1/review/detail```          |      |
+| \-   | [列表(指定天数)](review.md#列表指定天数)                           | ```/app1/review/range```           |      |
+| 统计 | [report](report.md)                                                | \-                                 |      |
+| \-   | [连续学习时间周目标完成情况](report.md#连续学习时间周目标完成情况) | ```/app1/report/continuous_days``` |      |
+| \-   | [合计(书籍)](report.md#合计书籍)                                   | ```/app1/report/all_by_book```     |      |
+| \-   | [周目标达成情况](report.md#周目标达成情况)                         | ```/app1/report/week_report```     |      |
 
 [返回顶部](#index)
 
