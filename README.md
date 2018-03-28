@@ -5,20 +5,20 @@
 | 类别 |                              方法名                              |              uri              |   说明   |
 | ---- | ---------------------------------------------------------------- | ----------------------------- | -------- |
 | 分类 | \-                                                               | \-                            | \-       |
-| \-   | [列表](/liumdlp/xueji-wiki/blob/master/category.md#列表)         | ```/app1/category/list```     |          |
-| \-   | [添加](/liumdlp/xueji-wiki/blob/master/category.md#添加)         | ```/app1/category/add```      |          |
-| \-   | [列表](/liumdlp/xueji-wiki/blob/master/category.md#列表)         | ```/app1/category/upd_book``` | *已废弃* |
-| \-   | [排序](/liumdlp/xueji-wiki/blob/master/category.md#排序)         | ```/app1/category/sort```     |          |
+| \-   | [列表](blob/master/category.md#列表)         | ```/app1/category/list```     |          |
+| \-   | [添加](blob/master/category.md#添加)         | ```/app1/category/add```      |          |
+| \-   | [列表](blob/master/category.md#列表)         | ```/app1/category/upd_book``` | *已废弃* |
+| \-   | [排序](blob/master/category.md#排序)         | ```/app1/category/sort```     |          |
 | 书籍 | \-                                                               | \-                            | \-       |
-| \-   | [isbn添加](/liumdlp/xueji-wiki/blob/master/book.md#isbn添加)     | ```/app1/book/add```          |          |
-| \-   | [自定义添加](/liumdlp/xueji-wiki/blob/master/book.md#自定义添加) | ```/app1/book/add_custom```   |          |
-| \-   | [详情](/liumdlp/xueji-wiki/blob/master/book.md#详情)             | ```/app1/book/detail```       |          |
+| \-   | [isbn添加](blob/master/book.md#isbn添加)     | ```/app1/book/add```          |          |
+| \-   | [自定义添加](blob/master/book.md#自定义添加) | ```/app1/book/add_custom```   |          |
+| \-   | [详情](blob/master/book.md#详情)             | ```/app1/book/detail```       |          |
 | 用户 | \-                                                               | \-                            | \-       |
-| \-   | [登录](/liumdlp/xueji-wiki/blob/master/user.md#登录)             | ```/app1/user/```             |          |
-| \-   | [登出(TODO)](/liumdlp/xueji-wiki/blob/master/user.md#todo登出)   | ```/app1/user/```                       ||
-| \-   | [静默注册](/liumdlp/xueji-wiki/blob/master/user.md#静默注册)     | ```/app1/user/```                       ||
-| \-   | [详情](/liumdlp/xueji-wiki/blob/master/user.md#详情)             | ```/app1/user/```                       ||
-| \-   | [设置](/liumdlp/xueji-wiki/blob/master/user.md#设置)             | ```/app1/user/```                       ||
+| \-   | [登录](blob/master/user.md#登录)             | ```/app1/user/```             |          |
+| \-   | [登出(TODO)](blob/master/user.md#todo登出)   | ```/app1/user/```                       ||
+| \-   | [静默注册](blob/master/user.md#静默注册)     | ```/app1/user/```                       ||
+| \-   | [详情](blob/master/user.md#详情)             | ```/app1/user/```                       ||
+| \-   | [设置](blob/master/user.md#设置)             | ```/app1/user/```                       ||
 |      |                                                                  |                               |          |
 
 
