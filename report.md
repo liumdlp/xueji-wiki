@@ -407,10 +407,10 @@ response 说明:
 | ----------------------------------- | ------------ | :----------------------------------------- |
 | code                                | 状态码       | 0:正常,其余见[响应状态码表](#响应状态码表) |
 | msg                                 | 消息         | 请求正常为"ok",否则为详细错误信息          |
-| 匹配信息部分，书籍详情&&分类详情    |              |                                            |
+| 匹配信息部分，书籍详情&&分类详情    | \-           | \-                                         |
 | data.report.book                    | 书籍         | 同书籍详情                                 |
 | data.report.category                | 分类         | 同分类详情                                 |
-| 合计部分                            |              |                                            |
+| 合计部分                            | \-           | \-                                         |
 | data.report.sum.page_count          | 学习页数合计 | 从注册开始                                 |
 | data.report.sum.time_count          | 学习时间合计 | 从注册开始，单位:分钟                      |
 | data.report.book.id                 | 书籍id       |                                            |
@@ -419,7 +419,7 @@ response 说明:
 | data.report.category.id             | 分类id       | 指定分类id会出现                           |
 | data.report.category.page_count     | 学习页数合计 |                                            |
 | data.report.category.time_count     | 学习时间合计 |                                            |
-| 分天计算                            |              |                                            |
+| 分天计算                            | \-           | \-                                         |
 | data.report.day.day                 | 日期         |                                            |
 | data.report.day.sum.page_count      | 学习页数合计 | 当天学习页数合计                           |
 | data.report.day.sum.time_count      | 学习时间合计 | 当天学习时间合计                           |
@@ -429,9 +429,9 @@ response 说明:
 | data.report.day.category.id         | 分类id       | 当天单分类学习页数合计                     |
 | data.report.day.category.page_count | 学习页数合计 | 当天单分类学习页数合计                     |
 | data.report.day.category.time_count | 学习时间合计 | 当天单分类学习时间合计                     |
-| 分周部分                            |              |                                            |
+| 分周部分                            | \-           | \-                                         |
 | data.report.week.*                  |              | 结构同单天，例如：2018-06 为2018年第6周    |
-| 分月部分                            |              |                                            |
+| 分月部分                            | \-           | \-                                         |
 | data.report.month.*                 |              | 结构同单天，例如：2018-02为2018年2月份     |
 
 
