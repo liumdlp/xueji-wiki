@@ -99,72 +99,91 @@ response:
     "msg": "ok",
     "data": [
         {
-            "date": 20180207,
-            "content": []
-        },
-        {
-            "date": 20180208,
-            "content": []
-        },
-        {
-            "date": 20180209,
-            "content": []
-        },
-        {
-            "date": 20180210,
-            "content": []
-        },
-        {
-            "date": 20180211,
-            "content": []
-        },
-        {
-            "date": 20180212,
-            "content": []
-        },
-        {
-            "date": 20180213,
+            "date": 20180214,
             "content": [
                 {
                     "bookid": 1,
                     "booktitle": "围城",
                     "bookcover_img": "https://img3.doubanio.com/mpic/s1070222.jpg",
-                    "learnid": 7,
-                    "learnreminder": "记得好好复习第3行",
-                    "learnbeg_page": 10,
-                    "learnend_page": 11,
-                    "reviewid": 3,
-                    "reviewstep": 7,
-                    "reviewtime": "2018-02-13 14:50:00",
-                    "reviewhm": "14:50"
-                },
-                {
-                    "bookid": 1,
-                    "booktitle": "围城",
-                    "bookcover_img": "https://img3.doubanio.com/mpic/s1070222.jpg",
-                    "learnid": 8,
-                    "learnreminder": " 又学习了一条",
-                    "learnbeg_page": 92,
-                    "learnend_page": 93,
-                    "reviewid": 4,
-                    "reviewstep": 7,
-                    "reviewtime": "2018-02-13 14:50:00",
-                    "reviewhm": "14:50"
-                },
-                {
-                    "bookid": 1,
-                    "booktitle": "围城",
-                    "bookcover_img": "https://img3.doubanio.com/mpic/s1070222.jpg",
-                    "learnid": 11,
+                    "learnid": 12,
                     "learnreminder": "记得好好复习第三行",
                     "learnbeg_page": 10,
                     "learnend_page": 11,
-                    "reviewid": 5,
+                    "reviewid": 6,
                     "reviewstep": 7,
-                    "reviewtime": "2018-02-13 22:50:00",
-                    "reviewhm": "22:50"
+                    "reviewtime": "2018-02-14 08:50:00",
+                    "reviewhm": "08:50",
+                    "review": {
+                        "id": 6,
+                        "learn_id": 12,
+                        "book_id": 1,
+                        "reminder": "记得好好复习第三行",
+                        "step1": "2018-01-30 09:10:00",
+                        "step2": "2018-01-30 09:50:00",
+                        "step3": "2018-01-31 08:50:00",
+                        "step4": "2018-02-01 08:50:00",
+                        "step5": "2018-02-04 08:50:00",
+                        "step6": "2018-02-06 08:50:00",
+                        "step7": "2018-02-14 08:50:00",
+                        "step8": "2018-03-01 08:50:00",
+                        "step9": "2018-03-31 08:50:00",
+                        "user_id": 1
+                    }
+                },
+                {
+                    "bookid": 1,
+                    "booktitle": "围城",
+                    "bookcover_img": "https://img3.doubanio.com/mpic/s1070222.jpg",
+                    "learnid": 14,
+                    "learnreminder": "记得好好复习第三行",
+                    "learnbeg_page": 10,
+                    "learnend_page": 11,
+                    "reviewid": 7,
+                    "reviewstep": 7,
+                    "reviewtime": "2018-02-14 08:50:00",
+                    "reviewhm": "08:50",
+                    "review": {
+                        "id": 7,
+                        "learn_id": 14,
+                        "book_id": 1,
+                        "reminder": "记得好好复习第三行",
+                        "step1": "2018-01-30 09:10:00",
+                        "step2": "2018-01-30 09:50:00",
+                        "step3": "2018-01-31 08:50:00",
+                        "step4": "2018-02-01 08:50:00",
+                        "step5": "2018-02-04 08:50:00",
+                        "step6": "2018-02-06 08:50:00",
+                        "step7": "2018-02-14 08:50:00",
+                        "step8": "2018-03-01 08:50:00",
+                        "step9": "2018-03-31 08:50:00",
+                        "user_id": 1
+                    }
                 }
             ]
+        },
+        {
+            "date": 20180215,
+            "content": []
+        },
+        {
+            "date": 20180216,
+            "content": []
+        },
+        {
+            "date": 20180217,
+            "content": []
+        },
+        {
+            "date": 20180218,
+            "content": []
+        },
+        {
+            "date": 20180219,
+            "content": []
+        },
+        {
+            "date": 20180220,
+            "content": []
         }
     ]
 }
@@ -188,6 +207,7 @@ response 说明:
 | data[].content.reviewstep    | 复习阶段     |                                            |
 | data[].content.reviewtime    | 复习提醒时间 | 也是复习开始时间                           |
 | data[].content.reviewhm      | 时间         | 截取的   小时:分钟                         |
+| data[].content.review        | 复习计划详情 |                                            |
 
 
 
