@@ -99,101 +99,74 @@ response:
     "msg": "ok",
     "data": [
         {
-            "date": 20180214,
-            "week_seq": 3,
-            "review_count": 16,
-            "content": [
-                {
-                    "bookid": 1,
-                    "booktitle": "围城",
-                    "bookcover_img": "https://img3.doubanio.com/mpic/s1070222.jpg",
-                    "learnid": 12,
-                    "learnreminder": "记得好好复习第三行",
-                    "learnbeg_page": 10,
-                    "learnend_page": 11,
-                    "reviewid": 6,
-                    "reviewstep": 7,
-                    "reviewtime": "2018-02-14 08:50:00",
-                    "reviewhm": "08:50",
-                    "review": {
-                        "id": 6,
-                        "step": [
-                            "2018-01-30 09:10:00",
-                            "2018-01-30 09:50:00",
-                            "2018-01-31 08:50:00",
-                            "2018-02-01 08:50:00",
-                            "2018-02-04 08:50:00",
-                            "2018-02-06 08:50:00",
-                            "2018-02-14 08:50:00",
-                            "2018-03-01 08:50:00",
-                            "2018-03-31 08:50:00"
-                        ]
-                    }
-                },
-                {
-                    "bookid": 1,
-                    "booktitle": "围城",
-                    "bookcover_img": "https://img3.doubanio.com/mpic/s1070222.jpg",
-                    "learnid": 14,
-                    "learnreminder": "记得好好复习第三行",
-                    "learnbeg_page": 10,
-                    "learnend_page": 11,
-                    "reviewid": 7,
-                    "reviewstep": 7,
-                    "reviewtime": "2018-02-14 08:50:00",
-                    "reviewhm": "08:50",
-                    "review": {
-                        "id": 7,
-                        "step": [
-                            "2018-01-30 09:10:00",
-                            "2018-01-30 09:50:00",
-                            "2018-01-31 08:50:00",
-                            "2018-02-01 08:50:00",
-                            "2018-02-04 08:50:00",
-                            "2018-02-06 08:50:00",
-                            "2018-02-14 08:50:00",
-                            "2018-03-01 08:50:00",
-                            "2018-03-31 08:50:00"
-                        ]
-                    }
-                },
-            ]
-        },
-        {
-            "date": 20180215,
-            "week_seq": 4,
-            "review_count": 0,
-            "content": []
-        },
-        {
-            "date": 20180216,
-            "week_seq": 5,
-            "review_count": 0,
-            "content": []
-        },
-        {
-            "date": 20180217,
-            "week_seq": 6,
-            "review_count": 0,
-            "content": []
-        },
-        {
-            "date": 20180218,
+            "date": "2018-04-15 00:00:00",
             "week_seq": 0,
             "review_count": 0,
             "content": []
         },
         {
-            "date": 20180219,
+            "date": "2018-04-16 00:00:00",
             "week_seq": 1,
             "review_count": 0,
             "content": []
         },
         {
-            "date": 20180220,
+            "date": "2018-04-17 00:00:00",
             "week_seq": 2,
             "review_count": 0,
             "content": []
+        },
+        {
+            "date": "2018-04-18 00:00:00",
+            "week_seq": 3,
+            "review_count": 0,
+            "content": []
+        },
+        {
+            "date": "2018-04-19 00:00:00",
+            "week_seq": 4,
+            "review_count": 0,
+            "content": []
+        },
+        {
+            "date": "2018-04-20 00:00:00",
+            "week_seq": 5,
+            "review_count": 0,
+            "content": []
+        },
+        {
+            "date": "2018-04-21 00:00:00",
+            "week_seq": 6,
+            "review_count": 1,
+            "content": [
+                {
+                    "bookid": 1,
+                    "booktitle": "围城",
+                    "bookcover_img": "https://img3.doubanio.com/mpic/s1070222.jpg",
+                    "learnid": 32,
+                    "learnreminder": "2018/4/7 12:00:00 ~ 2018/4/7 15:00:00 学习围城(id=1) p20~100 并加入复习计划",
+                    "learnbeg_page": 20,
+                    "learnend_page": 100,
+                    "reviewid": 23,
+                    "reviewstep": 7,
+                    "reviewtime": "2018-04-22 15:00:00",
+                    "reviewhm": "15:00",
+                    "review": {
+                        "id": 23,
+                        "step": [
+                            "2018-04-07 15:20:00",
+                            "2018-04-07 16:00:00",
+                            "2018-04-08 15:00:00",
+                            "2018-04-09 15:00:00",
+                            "2018-04-12 15:00:00",
+                            "2018-04-14 15:00:00",
+                            "2018-04-22 15:00:00",
+                            "2018-05-07 15:00:00",
+                            "2018-06-06 15:00:00"
+                        ]
+                    }
+                }
+            ]
         }
     ]
 }
@@ -205,7 +178,7 @@ response 说明:
 | ---------------------------- | ------------ | ------------------------------------------ |
 | code                         | 状态码       | 0:正常,其余见[响应状态码表](#响应状态码表) |
 | msg                          | 消息         | 请求正常为"ok",否则为详细错误信息          |
-| data[].date                  | 日期         |                                            |
+| data[].date                  | 日期         |   YYYY-mm-dd HH:ii::ss                                         |
 | data[].week_seq              | 星期几       | int, 0（表示星期天）到 6（表示星期六）     |
 | data[].review_count          | 复习条数     | 当前日期需要复习的条数                     |
 | data[].content.bookid        | 书籍id       |                                            |
