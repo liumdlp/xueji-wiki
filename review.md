@@ -100,6 +100,8 @@ response:
     "data": [
         {
             "date": 20180214,
+            "week_seq": 3,
+            "review_count": 16,
             "content": [
                 {
                     "bookid": 1,
@@ -159,26 +161,38 @@ response:
         },
         {
             "date": 20180215,
+            "week_seq": 4,
+            "review_count": 0,
             "content": []
         },
         {
             "date": 20180216,
+            "week_seq": 5,
+            "review_count": 0,
             "content": []
         },
         {
             "date": 20180217,
+            "week_seq": 6,
+            "review_count": 0,
             "content": []
         },
         {
             "date": 20180218,
+            "week_seq": 0,
+            "review_count": 0,
             "content": []
         },
         {
             "date": 20180219,
+            "week_seq": 1,
+            "review_count": 0,
             "content": []
         },
         {
             "date": 20180220,
+            "week_seq": 2,
+            "review_count": 0,
             "content": []
         }
     ]
@@ -192,6 +206,8 @@ response 说明:
 | code                         | 状态码       | 0:正常,其余见[响应状态码表](#响应状态码表) |
 | msg                          | 消息         | 请求正常为"ok",否则为详细错误信息          |
 | data[].date                  | 日期         |                                            |
+| data[].week_seq              | 星期几       | int, 0（表示星期天）到 6（表示星期六）     |
+| data[].review_count          | 复习条数     | 当前日期需要复习的条数                     |
 | data[].content.bookid        | 书籍id       |                                            |
 | data[].content.booktitle     | 书名         |                                            |
 | data[].content.bookcover_img | 封面图片     |                                            |
@@ -203,7 +219,8 @@ response 说明:
 | data[].content.reviewstep    | 复习阶段     |                                            |
 | data[].content.reviewtime    | 复习提醒时间 | 也是复习开始时间                           |
 | data[].content.reviewhm      | 时间         | 截取的   小时:分钟                         |
-| data[].content.review        | 复习计划详情 |                                            |
+| data[].content.review.id     | 复习计划id   |                                            |
+| data[].content.review.step   | 复习步骤     | 0-8共9步骤                                 |
 
 
 
