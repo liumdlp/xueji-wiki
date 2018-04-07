@@ -178,7 +178,7 @@ response 说明:
 | ---------------------------- | ------------ | ------------------------------------------ |
 | code                         | 状态码       | 0:正常,其余见[响应状态码表](#响应状态码表) |
 | msg                          | 消息         | 请求正常为"ok",否则为详细错误信息          |
-| data[].date                  | 日期         |   YYYY-mm-dd HH:ii::ss                                         |
+| data[].date                  | 日期         |   YYYY-mm-dd HH:ii:ss                                         |
 | data[].week_seq              | 星期几       | int, 0（表示星期天）到 6（表示星期六）     |
 | data[].review_count          | 复习条数     | 当前日期需要复习的条数                     |
 | data[].content.bookid        | 书籍id       |                                            |
