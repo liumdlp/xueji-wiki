@@ -82,13 +82,13 @@ uri: app1/review/range
 
 params:
 
-|  变量 |   名称   | 必填 | 类型 |                     描述                    |
-| ----- | -------- | ---- | ---- | ------------------------------------------- |
-| bdate | 开始日期 | 否   | int  | 例如20180206，默认当前周                                |
-| range | 查询长度 | 否   | int  | 从开始日期开始要查询多少天，默认为一星期(7) |
+|        变量       |   名称   | 必填 | 类型 |                     描述                    |
+| ----------------- | -------- | ---- | ---- | ------------------------------------------- |
+| bdate             | 开始日期 | 否   | int  | 例如20180206，默认当前周                    |
+| range**(已废弃)** | 查询长度 | 否   | int  | 从开始日期开始要查询多少天，默认为一星期(7) |
 
 
-请求示例：http://47.52.101.29/app1/review/range?bdate=20180206&range=7
+请求示例：http://47.52.101.29/app1/review/range?bdate=20180206
 
 
 response:
@@ -99,45 +99,45 @@ response:
     "msg": "ok",
     "data": [
         {
-            "date": "2018-04-15 00:00:00",
+            "date": "2018-04-01 00:00:00",
             "week_seq": 0,
             "review_count": 0,
             "content": []
         },
         {
-            "date": "2018-04-16 00:00:00",
+            "date": "2018-04-02 00:00:00",
             "week_seq": 1,
             "review_count": 0,
             "content": []
         },
         {
-            "date": "2018-04-17 00:00:00",
+            "date": "2018-04-03 00:00:00",
             "week_seq": 2,
             "review_count": 0,
             "content": []
         },
         {
-            "date": "2018-04-18 00:00:00",
+            "date": "2018-04-04 00:00:00",
             "week_seq": 3,
             "review_count": 0,
             "content": []
         },
         {
-            "date": "2018-04-19 00:00:00",
+            "date": "2018-04-05 00:00:00",
             "week_seq": 4,
             "review_count": 0,
             "content": []
         },
         {
-            "date": "2018-04-20 00:00:00",
+            "date": "2018-04-06 00:00:00",
             "week_seq": 5,
             "review_count": 0,
             "content": []
         },
         {
-            "date": "2018-04-21 00:00:00",
+            "date": "2018-04-07 00:00:00",
             "week_seq": 6,
-            "review_count": 1,
+            "review_count": 2,
             "content": [
                 {
                     "bookid": 1,
@@ -148,9 +148,36 @@ response:
                     "learnbeg_page": 20,
                     "learnend_page": 100,
                     "reviewid": 23,
-                    "reviewstep": 7,
-                    "reviewtime": "2018-04-22 15:00:00",
-                    "reviewhm": "15:00",
+                    "reviewstep": 1,
+                    "reviewtime": "2018-04-07 15:20:00",
+                    "reviewhm": "15:20",
+                    "review": {
+                        "id": 23,
+                        "step": [
+                            "2018-04-07 15:20:00",
+                            "2018-04-07 16:00:00",
+                            "2018-04-08 15:00:00",
+                            "2018-04-09 15:00:00",
+                            "2018-04-12 15:00:00",
+                            "2018-04-14 15:00:00",
+                            "2018-04-22 15:00:00",
+                            "2018-05-07 15:00:00",
+                            "2018-06-06 15:00:00"
+                        ]
+                    }
+                },
+                {
+                    "bookid": 1,
+                    "booktitle": "围城",
+                    "bookcover_img": "https://img3.doubanio.com/mpic/s1070222.jpg",
+                    "learnid": 32,
+                    "learnreminder": "2018/4/7 12:00:00 ~ 2018/4/7 15:00:00 学习围城(id=1) p20~100 并加入复习计划",
+                    "learnbeg_page": 20,
+                    "learnend_page": 100,
+                    "reviewid": 23,
+                    "reviewstep": 2,
+                    "reviewtime": "2018-04-07 16:00:00",
+                    "reviewhm": "16:00",
                     "review": {
                         "id": 23,
                         "step": [
