@@ -25,8 +25,9 @@
 | 学习 | [learn](learn.md)                                                  | \-                                 |      |
 | \-   | [记录](learn.md#记录)                                              | ```/app1/learn/log```              |      |
 | \-   | [设置周目标](learn.md#设置周目标)                                  | ```/app1/learn/week_goal```        |      |
-| 主页 | [main](main.md)                                                    | \-                                 |      |
+| 页面定制 | [main](main.md)                                                    | \-                          |      |
 | \-   | [主页](main.md#主页)                                               | ```/app1/main/index```             |      |
+| \-   | [我的](main.md#我的)                                               | ```/app1/main/my```             |      |
 | 传图 | [upload](upload.md)                                                | \-                                 |      |
 | \-   | [传图](upload.md#传图)                                             | ```/app1/upload/index```           |      |
 | 复习 | [review](review.md)                                                | \-                                 |      |
