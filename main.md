@@ -304,17 +304,17 @@ response 说明：
 | ------------------------------------ | -------------------- | --------------------------------------- |
 | code                                 | 状态码               | 0:正常                                  |
 | msg                                  | 消息                 | 请求正常为"ok",否则为详细错误信息       |
-| **头部部分**                         |                      |                                         |
+| **头部部分**                         | \-                   | \-                                      |
 | data.head{}                          | 头部部分             |                                         |
 | data.head.continuous_days            | 连续学习天数         |                                         |
 | data.head.beg_long                   | 本次连续学习开始日期 |                                         |
 | data.head.latest                     | 最后一次学习时间     |                                         |
 | data.head.latest_long                | 最后一次学习时间     | 完整格式                                |
-| **头部部分/一周学习情况**            | \-                   | \-                                      |
+| **头部部分 --> 一周学习情况**        | \-                   | \-                                      |
 | data.head.week_learned_flag[]        | 一周学习情况         | 顺序：周一到周日                        |
 | data.head.week_learned_flag.date     | 日期                 |                                         |
 | data.head.week_learned_flag.learned  | boolean,是否学习     | true: 当天有学习记录                    |
-| **周目标部分**                       |                      |                                         |
+| **周目标部分**                       | \-                   | \-                                      |
 | data.week_goal{}                     | 周目标部分           |                                         |
 | data.week_goal.time.goal             | 目标学习时间         | 单位:分钟                               |
 | data.week_goal.time.done             | 已学习时间           | 单位:分钟                               |
@@ -325,9 +325,11 @@ response 说明：
 | **合计部分**                         | \-                   | \-                                      |
 | data.report.sum.page_count           | 学习页数合计         | 从注册开始                              |
 | data.report.sum.time_count           | 学习时间合计         | 从注册开始，单位:分钟                   |
+| **合计部分 --> 书籍**                | \-                   | \-                                      |
 | data.report.book.id                  | 书籍id               |                                         |
 | data.report.book.page_count          | 学习页数合计         |                                         |
 | data.report.book.time_count          | 学习时间合计         |                                         |
+| **合计部分 --> 分类**                | \-                   | \-                                      |
 | data.report.category.id              | 分类id               | 指定分类id会出现                        |
 | data.report.category.page_count      | 学习页数合计         |                                         |
 | data.report.category.time_count      | 学习时间合计         |                                         |
@@ -335,9 +337,11 @@ response 说明：
 | data.report.day.day                  | 日期                 |                                         |
 | data.report.day.sum.page_count       | 学习页数合计         | 当天学习页数合计                        |
 | data.report.day.sum.time_count       | 学习时间合计         | 当天学习时间合计                        |
+| **分天计算 --> 书籍**                | \-                   | \-                                      |
 | data.report.day.book.id              | 书籍id               |                                         |
 | data.report.day.book.page_count      | 学习页数合计         | 当天单本书学习页数合计                  |
 | data.report.day.book.time_count      | 学习时间合计         | 当天单本书学习时间合计                  |
+| **分天计算 --> 分类**                | \-                   | \-                                      |
 | data.report.day.category.id          | 分类id               | 当天单分类学习页数合计                  |
 | data.report.day.category.page_count  | 学习页数合计         | 当天单分类学习页数合计                  |
 | data.report.day.category.time_count  | 学习时间合计         | 当天单分类学习时间合计                  |
@@ -347,4 +351,5 @@ response 说明：
 | data.report.month{}                  |                      | 结构同单天，例如：2018-02为2018年2月份  |
 | **匹配信息部分，书籍详情&&分类详情** | \-                   | \-                                      |
 | data.book                            | 书籍                 | 同[书籍详情](book.md#详情)              |
+| data.book.color                      | 书籍颜色             |                                         |
 | data.category                        | 分类                 | 同[分类详情](category.md#列表)          |
