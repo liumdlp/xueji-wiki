@@ -293,6 +293,17 @@ response:
                 "created_by": null,
                 "color": "#1AADBD"
             }
+        },
+        "category": {
+            "2": {
+                "id": 2,
+                "name": "日语",
+                "user_id": 1,
+                "ctime": 1513569372,
+                "utime": 1513569372,
+                "is_deleted": 0,
+                "sort": 2
+            }
         }
     }
 }
@@ -350,6 +361,6 @@ response 说明：
 | **分月部分**                         | \-                   | \-                                      |
 | data.report.month{}                  |                      | 结构同单天，例如：2018-02为2018年2月份  |
 | **匹配信息部分，书籍详情&&分类详情** | \-                   | \-                                      |
-| data.book                            | 书籍                 | 同[书籍详情](book.md#详情)              |
+| data.book{"书籍id":书籍详情{}}       | 书籍                 | 同[书籍详情](book.md#详情)              |
 | data.book.color                      | 书籍颜色             |                                         |
-| data.category                        | 分类                 | 同[分类详情](category.md#列表)          |
+| data.category{"分类id":分类详情{}}   | 分类                 | 同[分类详情](category.md#列表)          |
