@@ -342,9 +342,9 @@ response 说明：
 | data.report.day.category.page_count  | 学习页数合计         | 当天单分类学习页数合计                  |
 | data.report.day.category.time_count  | 学习时间合计         | 当天单分类学习时间合计                  |
 | **分周部分**                         | \-                   | \-                                      |
-| data.report.week.*                   |                      | 结构同单天，例如：2018-06 为2018年第6周 |
+| data.report.week{}                   |                      | 结构同单天，例如：2018-06 为2018年第6周 |
 | **分月部分**                         | \-                   | \-                                      |
-| data.report.month.*                  |                      | 结构同单天，例如：2018-02为2018年2月份  |
+| data.report.month{}                  |                      | 结构同单天，例如：2018-02为2018年2月份  |
 | **匹配信息部分，书籍详情&&分类详情** | \-                   | \-                                      |
 | data.book                            | 书籍                 | 同[书籍详情](book.md#详情)              |
 | data.category                        | 分类                 | 同[分类详情](category.md#列表)          |
