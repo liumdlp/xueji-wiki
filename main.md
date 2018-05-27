@@ -141,37 +141,13 @@ response:
     "msg": "ok",
     "data": {
         "head": {
-            "continuous_days": 1,
-            "beg_long": "2018-05-02 14:51:02",
-            "latest": 20180502,
-            "latest_long": "2018-05-02 14:51:02",
+            "continuous_days": 0,
+            "beg_long": "",
+            "latest": "",
+            "latest_long": "",
             "week_learned_flag": [
                 {
-                    "date": "2018-04-30",
-                    "learned": false
-                },
-                {
-                    "date": "2018-05-01",
-                    "learned": false
-                },
-                {
-                    "date": "2018-05-02",
-                    "learned": true
-                },
-                {
-                    "date": "2018-05-03",
-                    "learned": false
-                },
-                {
-                    "date": "2018-05-04",
-                    "learned": false
-                },
-                {
-                    "date": "2018-05-05",
-                    "learned": false
-                },
-                {
-                    "date": "2018-05-06",
+                    "date": "2018-05-26",
                     "learned": false
                 }
             ]
@@ -179,103 +155,14 @@ response:
         "week_goal": {
             "time": {
                 "goal": 0,
-                "done": 120,
+                "done": 0,
                 "rate": 0
             },
             "pages": {
                 "goal": 0,
-                "done": 19,
+                "done": 0,
                 "rate": 0
             }
-        },
-        "report": {
-            "sum": {
-                "page_count": 466,
-                "time_count": 4440
-            },
-            "book": [
-                {
-                    "id": 1,
-                    "page_count": 343,
-                    "time_count": 4080
-                }
-            ],
-            "category": [
-                {
-                    "id": 2,
-                    "page_count": 466,
-                    "time_count": 4440
-                }
-            ],
-            "day": [
-                {
-                    "day": "2018-01-05",
-                    "sum": {
-                        "page_count": 19,
-                        "time_count": 0
-                    },
-                    "book": [
-                        {
-                            "page_count": 19,
-                            "time_count": 0,
-                            "id": 1
-                        }
-                    ],
-                    "category": [
-                        {
-                            "page_count": 19,
-                            "time_count": 0,
-                            "id": 2
-                        }
-                    ]
-                },
-            ],
-            "week": [
-                {
-                    "week": "2018-01",
-                    "sum": {
-                        "page_count": 19,
-                        "time_count": 0
-                    },
-                    "book": [
-                        {
-                            "page_count": 19,
-                            "time_count": 0,
-                            "id": 1
-                        }
-                    ],
-                    "category": [
-                        {
-                            "page_count": 19,
-                            "time_count": 0,
-                            "id": 2
-                        }
-                    ]
-                }
-            ],
-            "month": [
-                {
-                    "month": "2018-01",
-                    "sum": {
-                        "page_count": 19,
-                        "time_count": 0
-                    },
-                    "book": [
-                        {
-                            "page_count": 19,
-                            "time_count": 0,
-                            "id": 1
-                        }
-                    ],
-                    "category": [
-                        {
-                            "page_count": 19,
-                            "time_count": 0,
-                            "id": 2
-                        }
-                    ]
-                }
-            ]
         },
         "book": {
             "1": {
@@ -294,15 +181,76 @@ response:
                 "color": "#1AADBD"
             }
         },
-        "category": {
-            "2": {
-                "id": 2,
-                "name": "日语",
-                "user_id": 1,
-                "ctime": 1513569372,
-                "utime": 1513569372,
-                "is_deleted": 0,
-                "sort": 2
+        "report": {
+            "day": [
+                {
+                    "day": "2018-05-26",
+                    "sum": {
+                        "page_count": 0,
+                        "time_count": 0
+                    },
+                    "book": null
+                }
+            ],
+            "week": [
+                {
+                    "week": "2018-15",
+                    "sum": {
+                        "page_count": 188,
+                        "time_count": 480
+                    },
+                    "book": [
+                        {
+                            "page_count": 89,
+                            "time_count": 420,
+                            "id": 1
+                        },
+                        {
+                            "page_count": 99,
+                            "time_count": 60,
+                            "id": 3
+                        }
+                    ]
+                }
+            ],
+            "month": [
+                {
+                    "month": "2018-04",
+                    "sum": {
+                        "page_count": 348,
+                        "time_count": 840
+                    },
+                    "book": [
+                        {
+                            "page_count": 249,
+                            "time_count": 780,
+                            "id": 1
+                        },
+                        {
+                            "page_count": 99,
+                            "time_count": 60,
+                            "id": 3
+                        }
+                    ]
+                }
+            ],
+            "sum": {
+                "sum": {
+                    "page_count": 485,
+                    "time_count": 4560
+                },
+                "book": [
+                    {
+                        "id": 1,
+                        "page_count": 343,
+                        "time_count": 4080
+                    },
+                    {
+                        "id": 3,
+                        "page_count": 142,
+                        "time_count": 480
+                    }
+                ]
             }
         }
     }
@@ -335,16 +283,16 @@ response 说明：
 | data.week_goal.pages.rate            | 占百分比             | int                               |
 | **数据报告**                         | \-                   | \-                                |
 | **数据报告 --> 合计部分**            | \-                   | \-                                |
-| data.report.sum.page_count           | 学习页数合计         | 从注册开始                        |
-| data.report.sum.time_count           | 学习时间合计         | 从注册开始，单位:分钟             |
+| data.report.sum.sum.page_count           | 学习页数合计         | 从注册开始                        |
+| data.report.sum.sum.time_count           | 学习时间合计         | 从注册开始，单位:分钟             |
 | **数据报告 --> 合计部分 --> 书籍**   | \-                   | \-                                |
-| data.report.book.id                  | 书籍id               |                                   |
-| data.report.book.page_count          | 学习页数合计         |                                   |
-| data.report.book.time_count          | 学习时间合计         |                                   |
-| **数据报告 --> 合计部分 --> 分类**   | \-                   | \-                                |
+| data.report.sum.book.id                  | 书籍id               |                                   |
+| data.report.sum.book.page_count          | 学习页数合计         |                                   |
+| data.report.sum.book.time_count          | 学习时间合计         |                                   |
+<!-- | **数据报告 --> 合计部分 --> 分类**   | \-                   | \-                                |
 | data.report.category.id              | 分类id               | 指定分类id会出现                  |
 | data.report.category.page_count      | 学习页数合计         |                                   |
-| data.report.category.time_count      | 学习时间合计         |                                   |
+| data.report.category.time_count      | 学习时间合计         |                                   | -->
 | **数据报告 --> 分天计算**            | \-                   | \-                                |
 | data.report.day.day                  | 日期                 |                                   |
 | data.report.day.sum.page_count       | 学习页数合计         | 当天学习页数合计                  |
@@ -353,10 +301,10 @@ response 说明：
 | data.report.day.book.id              | 书籍id               |                                   |
 | data.report.day.book.page_count      | 学习页数合计         | 当天单本书学习页数合计            |
 | data.report.day.book.time_count      | 学习时间合计         | 当天单本书学习时间合计            |
-| **数据报告 --> 分天计算 --> 分类**   | \-                   | \-                                |
+<!-- | **数据报告 --> 分天计算 --> 分类**   | \-                   | \-                                |
 | data.report.day.category.id          | 分类id               | 当天单分类学习页数合计            |
 | data.report.day.category.page_count  | 学习页数合计         | 当天单分类学习页数合计            |
-| data.report.day.category.time_count  | 学习时间合计         | 当天单分类学习时间合计            |
+| data.report.day.category.time_count  | 学习时间合计         | 当天单分类学习时间合计            | -->
 | **数据报告 --> 分周**                | \-                   | \-                                |
 | data.report.week{}                   | \-                   | 结构同单天                        |
 | data.report.week.week                | 周序号               | 例如: 2018-06 为2018年第6周       |
