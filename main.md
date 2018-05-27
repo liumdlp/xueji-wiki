@@ -289,10 +289,6 @@ response 说明：
 | data.report.sum.book.id                  | 书籍id               |                                   |
 | data.report.sum.book.page_count          | 学习页数合计         |                                   |
 | data.report.sum.book.time_count          | 学习时间合计         |                                   |
-<!-- | **数据报告 --\> 合计部分 --\> 分类**   | \-                   | \-                                |
-| data.report.category.id              | 分类id               | 指定分类id会出现                  |
-| data.report.category.page_count      | 学习页数合计         |                                   |
-| data.report.category.time_count      | 学习时间合计         |                                   | -->
 | **数据报告 --> 分天计算**            | \-                   | \-                                |
 | data.report.day.day                  | 日期                 |                                   |
 | data.report.day.sum.page_count       | 学习页数合计         | 当天学习页数合计                  |
@@ -301,10 +297,6 @@ response 说明：
 | data.report.day.book.id              | 书籍id               |                                   |
 | data.report.day.book.page_count      | 学习页数合计         | 当天单本书学习页数合计            |
 | data.report.day.book.time_count      | 学习时间合计         | 当天单本书学习时间合计            |
-<!-- | **数据报告 --\> 分天计算 --\> 分类**   | \-                   | \-                                |
-| data.report.day.category.id          | 分类id               | 当天单分类学习页数合计            |
-| data.report.day.category.page_count  | 学习页数合计         | 当天单分类学习页数合计            |
-| data.report.day.category.time_count  | 学习时间合计         | 当天单分类学习时间合计            | -->
 | **数据报告 --> 分周**                | \-                   | \-                                |
 | data.report.week{}                   | \-                   | 结构同单天                        |
 | data.report.week.week                | 周序号               | 例如: 2018-06 为2018年第6周       |
