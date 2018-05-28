@@ -442,13 +442,13 @@ uri: app1/report/week_report
 
 params:
 
-|  变量 |   名称   | 必填 |  类型  |                      描述                      |
-| ----- | -------- | ---- | ------ | ---------------------------------------------- |
-| btime | 开始时间 | 否   | string | 筛选周期内的学习记录，开始时间，例如：20180301 |
-| etime | 结束时间 | 否   | string | 结束时间                                       |
+|  变量 |   名称   | 必填 | 类型 |          描述         |
+| ----- | -------- | ---- | ---- | --------------------- |
+| page  | 页码     | 否   | int  | 默认0，当前周         |
+| limit | 分页大小 | 否   | int  | 每次返回月数，默认为2 |
 
 请求示例：
-http://47.52.101.29/app1/report/week_report?btime=20180301&etime=20180401
+http://47.52.101.29/app1/report/week_report
 
 response:
 
@@ -456,82 +456,53 @@ response:
 {
     "code": 0,
     "msg": "ok",
-    "data": {
-        "report": {
-            "2018-09": {
-                "time": {
-                    "goal": 0,
-                    "done": 0,
-                    "rate": 0
-                },
-                "pages": {
-                    "goal": 0,
-                    "done": 0,
-                    "rate": 0
+    "data": [
+        {
+            "month": "2018-01",
+            "report": [
+                {
+                    "beg_date": "2018-01-29",
+                    "end_date": "2018-02-04",
+                    "time_goal": 0,
+                    "time_done": 0,
+                    "time_rate": 0,
+                    "page_goal": 0,
+                    "page_done": 0,
+                    "page_rate": 0
                 }
-            },
-            "2018-10": {
-                "time": {
-                    "goal": 600,
-                    "done": 360,
-                    "rate": 60
-                },
-                "pages": {
-                    "goal": 300,
-                    "done": 6,
-                    "rate": 2
+            ]
+        },
+        {
+            "month": "2017-12",
+            "report": [
+                {
+                    "beg_date": "2017-12-25",
+                    "end_date": "2017-12-31",
+                    "time_goal": 0,
+                    "time_done": 0,
+                    "time_rate": 0,
+                    "page_goal": 0,
+                    "page_done": 0,
+                    "page_rate": 0
                 }
-            },
-            "2018-11": {
-                "time": {
-                    "goal": 600,
-                    "done": 3120,
-                    "rate": 520
-                },
-                "pages": {
-                    "goal": 300,
-                    "done": 67,
-                    "rate": 22
-                }
-            },
-            "2018-12": {
-                "time": {
-                    "goal": 0,
-                    "done": 0,
-                    "rate": 0
-                },
-                "pages": {
-                    "goal": 0,
-                    "done": 0,
-                    "rate": 0
-                }
-            },
-            "2018-13": {
-                "time": {
-                    "goal": 0,
-                    "done": 0,
-                    "rate": 0
-                },
-                "pages": {
-                    "goal": 0,
-                    "done": 0,
-                    "rate": 0
-                }
-            }
+            ]
         }
-    }
+    ]
 }
 ```
 
 response 说明:
 
-|                字段                |     名称     |                说明               |
-| ---------------------------------- | ------------ | --------------------------------- |
-| code                               | 状态码       | 0:正常                            |
-| msg                                | 消息         | 请求正常为"ok",否则为详细错误信息 |
-| data.report.(年-周序号).time.goal  | 目标学习时间 | 单位:分钟                         |
-| data.report.(年-周序号).time.done  | 已学习时间   | 单位:分钟                         |
-| data.report.(年-周序号).time.rate  | 占百分比     | int                               |
-| data.report.(年-周序号).pages.goal | 目标学习页数 |                                   |
-| data.report.(年-周序号).pages.done | 已学习页数   |                                   |
-| data.report.(年-周序号).pages.rate | 占百分比     | int                               |
+|           字段          |        名称        |                说明               |
+| ----------------------- | ------------------ | --------------------------------- |
+| code                    | 状态码             | 0:正常                            |
+| msg                     | 消息               | 请求正常为"ok",否则为详细错误信息 |
+| data[].month            | 月份               | 年-月                             |
+| data[].report.beg_date  | 周开始日期         |                                   |
+| data[].report.end_date  | 周结束日期         |                                   |
+| data[].report.time_goal | 周目标学习时间     | 分钟                              |
+| data[].report.time_done | 实际完成学习时间   |                                   |
+| data[].report.time_rate | 时间计划完成百分比 | (实际完成/目标)*100%              |
+| data[].report.page_goal | 周目标页数         |                                   |
+| data[].report.page_done | 实际完成学习页数   |                                   |
+| data[].report.page_rate | 页数计划完成百分比 | (实际完成/目标)*100%              |
