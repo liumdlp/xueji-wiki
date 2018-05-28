@@ -26,15 +26,16 @@ uri: app1/learn/log
 
 params:
 
-|   变量   |     名称     | 必填 |  类型  |               描述               |
-| -------- | ------------ | ---- | ------ | -------------------------------- |
-| bid      | 书籍ID       | 是   | int    | 默认：0                          |
-| btime    | 学习开始时间 | 是   | int    | unixtimestamp                    |
-| etime    | 学习结束时间 | 是   | int    | unixtimestamp                    |
-| bpage    | 开始页码     | 是   | int    | 默认为1                          |
-| epage    | 结束页码     | 是   | int    |                                  |
-| review   | 复习计划开关 | 否   | int    | 0:不添加复习计划（默认）  1:添加 |
-| reminder | 备注         | 否   | string | 150字max                         |
+|    变量    |     名称     | 必填 |  类型  |               描述               |
+| ---------- | ------------ | ---- | ------ | -------------------------------- |
+| bid        | 书籍ID       | 是   | int    | 默认：0                          |
+| btime      | 学习开始时间 | 否   | int    | unixtimestamp                    |
+| etime      | 学习结束时间 | 是   | int    | unixtimestamp                    |
+| mins_count | 学习时长     | 是   | int    | 单位:分钟                                 |
+| bpage      | 开始页码     | 是   | int    | 默认为1                          |
+| epage      | 结束页码     | 是   | int    |                                  |
+| review     | 复习计划开关 | 否   | int    | 0:不添加复习计划（默认）  1:添加 |
+| reminder   | 备注         | 否   | string | 150字max                         |
 
 
 请求示例：
