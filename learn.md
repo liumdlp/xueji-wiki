@@ -29,23 +29,14 @@ params:
 |    变量    |     名称     | 必填 |  类型  |               描述               |
 | ---------- | ------------ | ---- | ------ | -------------------------------- |
 | bid        | 书籍ID       | 是   | int    | 默认：0                          |
-| btime      | 学习开始时间 | 否   | int    | unixtimestamp                    |
-| etime      | 学习结束时间 | 是   | int    | unixtimestamp                    |
-| mins_count | 学习时长     | 是   | int    | 单位:分钟                                 |
+| btime      | 学习开始时间 | 否   | string | yyyy-mm-dd HH:ii:ss              |
+| etime      | 学习结束时间 | 是   | string | yyyy-mm-dd HH:ii:ss              |
+| mins_count | 学习时长     | 是   | int    | 单位:分钟                        |
 | bpage      | 开始页码     | 是   | int    | 默认为1                          |
 | epage      | 结束页码     | 是   | int    |                                  |
 | review     | 复习计划开关 | 否   | int    | 0:不添加复习计划（默认）  1:添加 |
 | reminder   | 备注         | 否   | string | 150字max                         |
 
-
-请求示例：
-
-```shell
-curl -X POST \
-  http://47.52.101.29/app1/learn/log \
-  -H 'content-type: application/x-www-form-urlencoded' \
-  -d 'token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSJ9.NOIs16yZ06eG53KuE68AjBnL5j_VpGaHfcG0Lo00f4M&bid=1&btime=1517226600&etime=1517237400&bpage=10&epage=11&review=1&reminder=%E8%AE%B0%E5%BE%97%E5%A5%BD%E5%A5%BD%E5%A4%8D%E4%B9%A0%E7%AC%AC%E4%B8%89%E8%A1%8C'
-```
 
 response:
 
