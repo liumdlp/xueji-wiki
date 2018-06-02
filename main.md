@@ -304,7 +304,7 @@ response 说明：
 | data.report.sum.sum.time_count              | 学习时间合计         | 从注册开始，单位:分钟             |
 | **数据报告 --> 合计部分 --> 书籍**          | \-                   | \-                                |
 | data.report.sum.book.id                     | 书籍id               |                                   |
-| data.report.sum.book.color                  | 书籍颜色             |                                   |
+| data.report.sum.book.book_color                  | 书籍颜色             |                                   |
 | data.report.sum.book.page_count             | 学习页数合计         |                                   |
 | data.report.sum.book.time_count             | 学习时间合计         |                                   |
 | **数据报告 --> 合计部分 --> 前5排序**       | \-                   | \-                                |
@@ -312,7 +312,7 @@ response 说明：
 | data.report.sum.book.first5_time.book_color | 书籍颜色             |                                   |
 | data.report.sum.book.first5_time.title      | 书籍名称             |                                   |
 | data.report.sum.book.first5_page.id         | 学习页书前5的书籍id  |                                   |
-| data.report.sum.book.first5_page.color      | 书籍颜色             |                                   |
+| data.report.sum.book.first5_page.book_color      | 书籍颜色             |                                   |
 | data.report.sum.book.first5_page.title      | 书籍名称             |                                   |
 | **数据报告 --> 分天计算**                   | \-                   | \-                                |
 | data.report.day.day                         | 日期                 |                                   |
