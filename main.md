@@ -150,7 +150,9 @@ response:
                     "date": "2018-05-26",
                     "learned": false
                 }
-            ]
+            ],
+            "username": "刘先森",
+            "avatar": "/static/123.png"
         },
         "week_goal": {
             "time": {
@@ -277,6 +279,8 @@ response 说明：
 | data.head.beg_long                    | 本次连续学习开始日期 |                                   |
 | data.head.latest                      | 最后一次学习时间     |                                   |
 | data.head.latest_long                 | 最后一次学习时间     | 完整格式                          |
+| data.head.username                    | 用户昵称             |                                   |
+| data.head.avatar                      | 用户头像             |                                   |
 | **头部部分 --> 一周学习情况**         | \-                   | \-                                |
 | data.head.week_learned_flag[]         | 一周学习情况         | 顺序：周一到周日                  |
 | data.head.week_learned_flag.date      | 日期                 |                                   |
