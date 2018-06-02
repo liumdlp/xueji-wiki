@@ -330,6 +330,5 @@ response 说明：
 | data.report.month{}                         | \-                   | 结构同单天                        |
 | data.report.month.month                     | 月序号               | 例如: 2018-02 为2018年2月         |
 | **匹配信息部分，书籍详情&&分类详情**        | \-                   | \-                                |
-| data.book[书籍详情{}]                       | 书籍                 | 同[书籍详情](book.md#详情)        |
 | data.book.color                             | 书籍颜色             |                                   |
 | data.category{"分类id":分类详情{}}          | 分类                 | 同[分类详情](category.md#列表)    |
