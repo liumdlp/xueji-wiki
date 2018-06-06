@@ -14,8 +14,8 @@
 | \-   | [排序](category.md#排序)                                           | ```/app1/category/sort```          |      |
 | 书籍 | [book](book.md)                                                    | \-                                 |      |
 | \-   | [添加书籍](book.md#添加书籍)                                       | ```/app1/book/add```               |
-| \-   | ~~[isbn添加](book.md#isbn添加)~~                                       | ~~```/app1/book/add```~~          |      |
-| \-   | ~~[自定义添加](book.md#自定义添加)~~                                   | ~~```/app1/book/add_custom```~~    |      |
+| \-   | ~~[isbn添加](#)~~ **⚠️⚠️⚠️已废弃，功能并入 app1/book/add⚠️⚠️⚠️**            |                                    |      |
+| \-   | ~~[自定义添加](#)~~ **⚠️⚠️⚠️已废弃，功能并入 app1/book/add⚠️⚠️⚠️**          |                                    |      |
 | \-   | [详情](book.md#详情)                                               | ```/app1/book/detail```            |      |
 | 用户 | [user](user.md)                                                    | \-                                 |      |
 | \-   | [登录](user.md#登录)                                               | ```/app1/user/login```             |      |
