@@ -118,6 +118,6 @@ response:
 ```
 
 response 说明：
-同 <a href="#add_book_resp">isbn添加</a>
+同 <a href="#add_book_resp">添加</a>
 
 
