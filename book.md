@@ -81,15 +81,15 @@ uri: app1/book/add_custom
 
 params:
 
-|    变量   |   名称   | 必填 |  类型  |               描述               |
-| --------- | -------- | ---- | ------ | -------------------------------- |
-| title     | 标题     | 是   | string | 书籍名称                         |
-| cid       | 分类id   | 是   | int    | 加入的分类id                     |
-| img       | 封面图片 | 否   | string | 书籍封面图片地址                 |
-| author    | 作者     | 否   | string | json格式数组，第一作者放在第一个 |
-| publisher | 出版商   | 否   | string |                                  |
-| pubdate   | 出版时间 | 否   | string |                                  |
-| pages     | 页数     | 否   | int    | 默认为0                          |
+|    变量   |   名称   | 必填 |  类型  |                 描述                 |
+| --------- | -------- | ---- | ------ | ------------------------------------ |
+| title     | 标题     | 是   | string | 书籍名称                             |
+| cid       | 分类id   | 否   | int    | 书籍加入的分类的id，不传加入默认分类 |
+| img       | 封面图片 | 否   | string | 书籍封面图片地址                     |
+| author    | 作者     | 否   | string | json格式数组，第一作者放在第一个     |
+| publisher | 出版商   | 否   | string |                                      |
+| pubdate   | 出版时间 | 否   | string |                                      |
+| pages     | 页数     | 否   | int    | 默认为0                              |
 
 请求示例：
 
