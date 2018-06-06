@@ -13,8 +13,9 @@
 | \-   | [添加](category.md#添加)                                           | ```/app1/category/add```           |      |
 | \-   | [排序](category.md#排序)                                           | ```/app1/category/sort```          |      |
 | 书籍 | [book](book.md)                                                    | \-                                 |      |
-| \-   | [isbn添加](book.md#isbn添加)                                       | ```/app1/book/add```               |      |
-| \-   | [自定义添加](book.md#自定义添加)                                   | ```/app1/book/add_custom```        |      |
+| \-   | [添加书籍](book.md#添加书籍)                                       | ```/app1/book/add```               |
+| \-   | ~~[isbn添加](book.md#isbn添加)~~                                       | ```/app1/book/add```              |      |
+| \-   | ~~[自定义添加](book.md#自定义添加)~~                                   | ```/app1/book/add_custom```        |      |
 | \-   | [详情](book.md#详情)                                               | ```/app1/book/detail```            |      |
 | 用户 | [user](user.md)                                                    | \-                                 |      |
 | \-   | [登录](user.md#登录)                                               | ```/app1/user/login```             |      |
@@ -66,6 +67,7 @@
 | 333202 | 分类不存在                     |
 | 333203 | 自定义书籍添加失败             |
 | 333204 | 加入分类失败                   |
+| 333205 | 书籍添加失败                   |
 | 333401 | 书籍不存在                     |
 | 333402 | 记录失败                       |
 | 333403 | 起止页码非法                   |
