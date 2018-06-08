@@ -23,17 +23,19 @@ uri: app1/book/add
 
 params:
 
-|    变量   |   名称   | 必填 |  类型  |                       描述                      |
-| --------- | -------- | ---- | ------ | ----------------------------------------------- |
-| type      | 添加方式 | 是   | string | isbn: 通过isbn号添加书籍,custom: 添加自定义书籍 |
-| isbn      | ISBN码   | 否   | int    | 默认：0, **当type=="isbn"时必填**               |
-| cid       | 分类id   | 否   | int    | 书籍加入的分类的id，不传加入默认分类            |
-| title     | 标题     | 否   | string | 书籍名称  **当type=="custom"时必填**            |
-| img       | 封面图片 | 否   | string | 书籍封面图片地址                                |
-| author    | 作者     | 否   | string | json格式数组，第一作者放在第一个                |
-| publisher | 出版商   | 否   | string |                                                 |
-| pubdate   | 出版时间 | 否   | string |                                                 |
-| pages     | 页数     | 否   | int    | 默认为0                                         |
+|    变量   |     名称     | 必填 |  类型  |                       描述                      |
+| --------- | ------------ | ---- | ------ | ----------------------------------------------- |
+| type      | 添加方式     | 是   | string | isbn: 通过isbn号添加书籍,custom: 添加自定义书籍 |
+| add       | 是否加入分类 | 否   | string | Y: 加入分类 N: (默认)不加入分类                 |
+| cid       | 分类id       | 否   | int    | 书籍加入的分类的id，不传则加入默认分类          |
+| isbn      | ISBN码       | 否   | int    | 默认：0, **当type=="isbn"时必填**               |
+| title     | 标题         | 否   | string | 书籍名称  **当type=="custom"时必填**            |
+| img       | 封面图片     | 否   | string | 书籍封面图片地址                                |
+| author    | 作者         | 否   | string | json格式数组，第一作者放在第一个                |
+| publisher | 出版商       | 否   | string |                                                 |
+| pubdate   | 出版时间     | 否   | string |                                                 |
+| pages     | 页数         | 否   | int    | 默认为0                                         |
+
 
 
 请求示例：http://47.52.101.29/app1/book/add?isbn=9787020033430
