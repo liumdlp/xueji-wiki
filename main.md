@@ -266,6 +266,18 @@ response:
                         "title": "钢铁是怎样炼成的（教育部新编语文教材推荐阅读书系）"
                     }
                 ]
+            },
+            "max": {
+                "time": {
+                    "day": 0,
+                    "week": 180,
+                    "month": 3480
+                },
+                "page": {
+                    "day": 0,
+                    "week": 99,
+                    "month": 348
+                }
             }
         }
     }
@@ -274,61 +286,68 @@ response:
 
 response 说明：
 
-|                     字段                    |         名称         |                说明               |
-| ------------------------------------------- | -------------------- | --------------------------------- |
-| code                                        | 状态码               | 0:正常                            |
-| msg                                         | 消息                 | 请求正常为"ok",否则为详细错误信息 |
-| **头部部分**                                | \-                   | \-                                |
-| data.head{}                                 | 头部部分             |                                   |
-| data.head.continuous_days                   | 连续学习天数         |                                   |
-| data.head.beg_long                          | 本次连续学习开始日期 |                                   |
-| data.head.latest                            | 最后一次学习时间     |                                   |
-| data.head.latest_long                       | 最后一次学习时间     | 完整格式                          |
-| data.head.username                          | 用户昵称             |                                   |
-| data.head.avatar                            | 用户头像             |                                   |
-| **头部部分 --> 一周学习情况**               | \-                   | \-                                |
-| data.head.week_learned_flag[]               | 一周学习情况         | 顺序：周一到周日                  |
-| data.head.week_learned_flag.date            | 日期                 |                                   |
-| data.head.week_learned_flag.learned         | boolean,是否学习     | true: 当天有学习记录              |
-| **周目标部分**                              | \-                   | \-                                |
-| data.week_goal{}                            | 周目标部分           |                                   |
-| data.week_goal.time.goal                    | 目标学习时间         | 单位:分钟                         |
-| data.week_goal.time.done                    | 已学习时间           | 单位:分钟                         |
-| data.week_goal.time.rate                    | 占百分比             | int                               |
-| data.week_goal.pages.goal                   | 目标学习页数         |                                   |
-| data.week_goal.pages.done                   | 已学习页数           |                                   |
-| data.week_goal.pages.rate                   | 占百分比             | int                               |
-| **数据报告**                                | \-                   | \-                                |
-| **数据报告 --> 合计部分**                   | \-                   | \-                                |
-| data.report.sum.sum.page_count              | 学习页数合计         | 从注册开始                        |
-| data.report.sum.sum.time_count              | 学习时间合计         | 从注册开始，单位:分钟             |
-| **数据报告 --> 合计部分 --> 书籍**          | \-                   | \-                                |
-| data.report.sum.book.id                     | 书籍id               |                                   |
-| data.report.sum.book.book_color                  | 书籍颜色             |                                   |
-| data.report.sum.book.page_count             | 学习页数合计         |                                   |
-| data.report.sum.book.time_count             | 学习时间合计         |                                   |
-| **数据报告 --> 合计部分 --> 前5排序**       | \-                   | \-                                |
-| data.report.sum.book.first5_time.id         | 学习时间前5的书籍id  |                                   |
-| data.report.sum.book.first5_time.book_color | 书籍颜色             |                                   |
-| data.report.sum.book.first5_time.title      | 书籍名称             |                                   |
-| data.report.sum.book.first5_page.id         | 学习页书前5的书籍id  |                                   |
-| data.report.sum.book.first5_page.book_color      | 书籍颜色             |                                   |
-| data.report.sum.book.first5_page.title      | 书籍名称             |                                   |
-| **数据报告 --> 分天计算**                   | \-                   | \-                                |
-| data.report.day.day                         | 日期                 |                                   |
-| data.report.day.sum.page_count              | 学习页数合计         | 当天学习页数合计                  |
-| data.report.day.sum.time_count              | 学习时间合计         | 当天学习时间合计                  |
-| **数据报告 --> 分天计算 --> 书籍**          | \-                   | \-                                |
-| data.report.day.book.id                     | 书籍id               |                                   |
-| data.report.day.book.book_color             | 书籍颜色             |                                   |
-| data.report.day.book.page_count             | 学习页数合计         | 当天单本书学习页数合计            |
-| data.report.day.book.time_count             | 学习时间合计         | 当天单本书学习时间合计            |
-| **数据报告 --> 分周**                       | \-                   | \-                                |
-| data.report.week{}                          | \-                   | 结构同单天                        |
-| data.report.week.week                       | 周序号               | 例如: 2018-06 为2018年第6周       |
-| **数据报告 --> 分月**                       | \-                   | \-                                |
-| data.report.month{}                         | \-                   | 结构同单天                        |
-| data.report.month.month                     | 月序号               | 例如: 2018-02 为2018年2月         |
-| **匹配信息部分，书籍详情&&分类详情**        | \-                   | \-                                |
-| data.book.color                             | 书籍颜色             |                                   |
-| data.category{"分类id":分类详情{}}          | 分类                 | 同[分类详情](category.md#列表)    |
+|                     字段                    |          名称          |                说明               |
+| ------------------------------------------- | ---------------------- | --------------------------------- |
+| code                                        | 状态码                 | 0:正常                            |
+| msg                                         | 消息                   | 请求正常为"ok",否则为详细错误信息 |
+| **头部部分**                                | \-                     | \-                                |
+| data.head{}                                 | 头部部分               |                                   |
+| data.head.continuous_days                   | 连续学习天数           |                                   |
+| data.head.beg_long                          | 本次连续学习开始日期   |                                   |
+| data.head.latest                            | 最后一次学习时间       |                                   |
+| data.head.latest_long                       | 最后一次学习时间       | 完整格式                          |
+| data.head.username                          | 用户昵称               |                                   |
+| data.head.avatar                            | 用户头像               |                                   |
+| **头部部分 --> 一周学习情况**               | \-                     | \-                                |
+| data.head.week_learned_flag[]               | 一周学习情况           | 顺序：周一到周日                  |
+| data.head.week_learned_flag.date            | 日期                   |                                   |
+| data.head.week_learned_flag.learned         | boolean,是否学习       | true: 当天有学习记录              |
+| **周目标部分**                              | \-                     | \-                                |
+| data.week_goal{}                            | 周目标部分             |                                   |
+| data.week_goal.time.goal                    | 目标学习时间           | 单位:分钟                         |
+| data.week_goal.time.done                    | 已学习时间             | 单位:分钟                         |
+| data.week_goal.time.rate                    | 占百分比               | int                               |
+| data.week_goal.pages.goal                   | 目标学习页数           |                                   |
+| data.week_goal.pages.done                   | 已学习页数             |                                   |
+| data.week_goal.pages.rate                   | 占百分比               | int                               |
+| **数据报告**                                | \-                     | \-                                |
+| **数据报告 --> 合计部分**                   | \-                     | \-                                |
+| data.report.sum.sum.page_count              | 学习页数合计           | 从注册开始                        |
+| data.report.sum.sum.time_count              | 学习时间合计           | 从注册开始，单位:分钟             |
+| **数据报告 --> 合计部分 --> 书籍**          | \-                     | \-                                |
+| data.report.sum.book.id                     | 书籍id                 |                                   |
+| data.report.sum.book.book_color             | 书籍颜色               |                                   |
+| data.report.sum.book.page_count             | 学习页数合计           |                                   |
+| data.report.sum.book.time_count             | 学习时间合计           |                                   |
+| **数据报告 --> 合计部分 --> 前5排序**       | \-                     | \-                                |
+| data.report.sum.book.first5_time.id         | 学习时间前5的书籍id    |                                   |
+| data.report.sum.book.first5_time.book_color | 书籍颜色               |                                   |
+| data.report.sum.book.first5_time.title      | 书籍名称               |                                   |
+| data.report.sum.book.first5_page.id         | 学习页书前5的书籍id    |                                   |
+| data.report.sum.book.first5_page.book_color | 书籍颜色               |                                   |
+| data.report.sum.book.first5_page.title      | 书籍名称               |                                   |
+| **数据报告 --> 图表部分 --> 最大数 **       | \-                     | \-                                |
+| data.report.max.time.day                    | 本次查询日最大学习时间 |                                   |
+| data.report.max.time.week                   | 本次查询周最大学习时间 |                                   |
+| data.report.max.time.month                  | 本次查询月最大学习时间 |                                   |
+| data.report.max.page.day                    | 本次查询日最大学习页数 |                                   |
+| data.report.max.page.week                   | 本次查询周最大学习页数 |                                   |
+| data.report.max.page.month                  | 本次查询月最大学习页数 |                                   |
+| **数据报告 --> 分天计算**                   | \-                     | \-                                |
+| data.report.day.day                         | 日期                   |                                   |
+| data.report.day.sum.page_count              | 学习页数合计           | 当天学习页数合计                  |
+| data.report.day.sum.time_count              | 学习时间合计           | 当天学习时间合计                  |
+| **数据报告 --> 分天计算 --> 书籍**          | \-                     | \-                                |
+| data.report.day.book.id                     | 书籍id                 |                                   |
+| data.report.day.book.book_color             | 书籍颜色               |                                   |
+| data.report.day.book.page_count             | 学习页数合计           | 当天单本书学习页数合计            |
+| data.report.day.book.time_count             | 学习时间合计           | 当天单本书学习时间合计            |
+| **数据报告 --> 分周**                       | \-                     | \-                                |
+| data.report.week{}                          | \-                     | 结构同单天                        |
+| data.report.week.week                       | 周序号                 | 例如: 2018-06 为2018年第6周       |
+| **数据报告 --> 分月**                       | \-                     | \-                                |
+| data.report.month{}                         | \-                     | 结构同单天                        |
+| data.report.month.month                     | 月序号                 | 例如: 2018-02 为2018年2月         |
+| **匹配信息部分，书籍详情&&分类详情**        | \-                     | \-                                |
+| data.book.color                             | 书籍颜色               |                                   |
+| data.category{"分类id":分类详情{}}          | 分类                   | 同[分类详情](category.md#列表)    |
