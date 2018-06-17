@@ -326,7 +326,7 @@ response 说明：
 | data.report.sum.book.first5_page.id         | 学习页书前5的书籍id    |                                   |
 | data.report.sum.book.first5_page.book_color | 书籍颜色               |                                   |
 | data.report.sum.book.first5_page.title      | 书籍名称               |                                   |
-| **数据报告 --> 图表部分 --> 最大数 **       | \-                     | \-                                |
+| **数据报告 --> 图表部分 --> 最大数**       | \-                     | \-                                |
 | data.report.max.time.day                    | 本次查询日最大学习时间 |                                   |
 | data.report.max.time.week                   | 本次查询周最大学习时间 |                                   |
 | data.report.max.time.month                  | 本次查询月最大学习时间 |                                   |
