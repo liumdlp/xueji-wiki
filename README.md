@@ -13,10 +13,11 @@
 | \-   | [添加](category.md#添加)                                           | ```/app1/category/add```           |      |
 | \-   | [排序](category.md#排序)                                           | ```/app1/category/sort```          |      |
 | 书籍 | [book](book.md)                                                    | \-                                 |      |
-| \-   | [添加书籍](book.md#添加书籍)                                       | ```/app1/book/add```               |
+| \-   | [添加书籍](book.md#添加书籍)                                       | ```/app1/book/add```               |       |
+| \-   | [移除书籍](book.md#移除书籍)                                       | ```/app1/book/remove```               |       |
+| \-   | [详情](book.md#详情)                                               | ```/app1/book/detail```            |      |
 | \-   | ~~[isbn添加](#)~~ **⚠️已废弃，功能并入 app1/book/add⚠️**            |                                    |      |
 | \-   | ~~[自定义添加](#)~~ **⚠️️已废弃，功能并入 app1/book/add⚠️**          |                                    |      |
-| \-   | [详情](book.md#详情)                                               | ```/app1/book/detail```            |      |
 | 用户 | [user](user.md)                                                    | \-                                 |      |
 | \-   | [登录](user.md#登录)                                               | ```/app1/user/login```             |      |
 | \-   | [登出(TODO)](user.md#todo登出)                                     | ```/app1/user/logout```            |      |
@@ -68,6 +69,7 @@
 | 333203 | 自定义书籍添加失败             |
 | 333204 | 加入分类失败                   |
 | 333205 | 书籍添加失败                   |
+| 333205 | 书籍移除失败                   |
 | 333401 | 书籍不存在                     |
 | 333402 | 记录失败                       |
 | 333403 | 起止页码非法                   |
