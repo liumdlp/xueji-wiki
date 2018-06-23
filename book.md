@@ -5,6 +5,8 @@
     + [添加](#添加)
 	+ [详情](#详情)
     + [移除](#移除)
+    + [详情(带分类)](#详情带分类)
+
 
 
 
@@ -124,7 +126,6 @@ response:
 response 说明：
 同 <a href="#add_book_resp">添加</a>
 
-
 ### 移除
 
 uri: app1/book/remove
@@ -134,9 +135,8 @@ params:
 | 变量 |  名称  | 必填 | 类型 | 描述 |
 | ---- | ------ | ---- | ---- | ---- |
 | id   | 书籍ID | 是   | int        ||
-| cid  | 分类ID | 是   | int        ||
 
-请求示例：http://47.52.101.29/app1/book/remove?id=50&cid=2
+请求示例：http://47.52.101.29/app1/book/remove?id=50
 
 response:
 
@@ -157,3 +157,43 @@ response 说明：
 | code         | 状态码       |                                   |
 | msg          | 消息         | 请求正常为"ok",否则为详细错误信息 |
 | data.book_id | 被删除书籍id |                                   |
+
+
+
+### 详情(带分类)
+
+uri: app1/book/detail
+
+params:
+
+| 变量 |  名称  | 必填 | 类型 | 描述 |
+| ---- | ------ | ---- | ---- | ---- |
+| id   | 书籍ID | 是   | int        ||
+
+请求示例：http://47.52.101.29/app1/book/my_detail?id=1
+
+response:
+
+```json
+{
+    "code": 0,
+    "msg": "ok",
+    "data": {
+        "id": 1,
+        "title": "围城",
+        "isbn": 9787020024759,
+        "cover_img": "https://img3.doubanio.com/mpic/s1070222.jpg",
+        "author_first": "钱锺书",
+        "author_all": "[\"\\u94b1\\u953a\\u4e66\"]",
+        "publisher": "人民文学出版社",
+        "pubdate": "1991-2",
+        "douban_id": 1008145,
+        "pages": 0,
+        "created_by": 0,
+        "ctime": 0
+    }
+}
+```
+
+response 说明：
+同 <a href="#add_book_resp">添加</a>
