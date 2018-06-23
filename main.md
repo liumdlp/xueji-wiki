@@ -351,3 +351,70 @@ response 说明：
 | **匹配信息部分，书籍详情&&分类详情**        | \-                     | \-                                |
 | data.book.color                             | 书籍颜色               |                                   |
 | data.category{"分类id":分类详情{}}          | 分类                   | 同[分类详情](category.md#列表)    |
+
+
+
+
+### 我的
+
+uri: app1/main/my_detail
+
+params:
+
+|    变量   |  名称  | 必填 |  类型  |              描述              |
+| --------- | ------ | ---- | ------ | ------------------------------ |
+| calc_type | 维度1  | 否   | string | BOOK:书籍(默认)  CATEGORY:分类 |
+| cid       | 分类id | 否   | int    | 指定分类id                     |
+| time_dim  | 维度2  | 否   | string | DAY:日(默认) WEEK:周 MONTH:月  |
+| page      | 分页   | 否   | int    | 默认为0，步长位7(天周月)       |
+
+请求示例：http://47.52.101.29/app1/main/my_detail?calc_type=CATEGORY&cid=2&time_dim=DAY&page=10
+
+response:
+```json
+{
+    "code": 0,
+    "msg": "ok",
+    "data": {
+        "report": [
+
+            // 日维度的分类
+            {
+                "day": "2018-04-14",
+                "sum": {
+                    "page_count": 0,
+                    "time_count": 0
+                },
+                "category": []
+            },
+            ...
+
+            // 周维度的书籍
+            {
+                "week": "2018-25",
+                "sum": {
+                    "page_count": 0,
+                    "time_count": 0
+                },
+                "book": []
+            },
+            ...
+
+            // 月维度的分类
+            {
+                "month": "2018-04",
+                "sum": {
+                    "page_count": 0,
+                    "time_count": 0
+                },
+                "category": []
+            },
+
+        ],
+        "max": {
+            "time": 420,
+            "page": 89
+        }
+    }
+}
+```
