@@ -30,6 +30,7 @@
 | 页面定制 | [main](main.md)                                                    | \-                          |      |
 | \-   | [主页](main.md#主页)                                               | ```/app1/main/index```             |      |
 | \-   | [我的](main.md#我的)                                               | ```/app1/main/my```             |      |
+| \-   | [我的(详情)](main.md#我的详情)                                       | ```/app1/main/my_detail```             |  |
 | 传图 | [upload](upload.md)                                                | \-                                 |      |
 | \-   | [传图](upload.md#传图)                                             | ```/app1/upload/index```           |      |
 | 复习 | [review](review.md)                                                | \-                                 |      |
