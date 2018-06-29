@@ -24,7 +24,7 @@
 | \-   | [静默注册](user.md#静默注册)                                       | ```/app1/user/ssign_up```          |      |
 | \-   | [详情](user.md#详情)                                               | ```/app1/user/profile```           |      |
 | \-   | [设置](user.md#设置)                                               | ```/app1/user/setting```           |      |
-| \-   | [获取短信验证码](user.md#获取短信验证码)                              | ```app1/user/get_sms_code```           |    |
+| \-   | [获取短信验证码](user.md#获取短信验证码)                              | ```/app1/user/get_sms_code```      |    |
 | 学习 | [learn](learn.md)                                                  | \-                                 |      |
 | \-   | [记录](learn.md#记录)                                              | ```/app1/learn/log```              |      |
 | \-   | [设置周目标](learn.md#设置周目标)                                  | ```/app1/learn/week_goal```        |      |
