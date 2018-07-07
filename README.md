@@ -23,7 +23,8 @@
 | \-   | [登出(TODO)](user.md#todo登出)                                     | ```/app1/user/logout```            |      |
 | \-   | [静默注册](user.md#静默注册)                                       | ```/app1/user/ssign_up```          |      |
 | \-   | [详情](user.md#详情)                                               | ```/app1/user/profile```           |      |
-| \-   | [设置](user.md#设置)                                               | ```/app1/user/setting```           |      |
+| \-   | [编辑详情](user.md#编辑详情)                                          | ```/app1/user/modify_profile``` |    |
+| \-   | [设置免扰](user.md#设置)                                               | ```/app1/user/setting```           |   |
 | \-   | [获取短信验证码](user.md#获取短信验证码)                              | ```/app1/user/get_sms_code```      |    |
 | 学习 | [learn](learn.md)                                                  | \-                                 |      |
 | \-   | [记录](learn.md#记录)                                              | ```/app1/learn/log```              |      |
@@ -63,6 +64,7 @@
 | 333009 | 防打扰时间非法                 |
 | 333010 | 设置失败                       |
 | 333011 | 短信发送失败                   |
+| 333012 | 编辑详情失败                   |
 | 333101 | 列表不存在                     |
 | 333102 | 书籍查找错误                   |
 | 333103 | 分类排序失败                   |
