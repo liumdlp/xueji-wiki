@@ -13,7 +13,7 @@
 | \-   | [添加](category.md#添加)                                           | ```/app1/category/add```           |      |
 | \-   | [排序](category.md#排序)                                           | ```/app1/category/sort```          |      |
 | 书籍 | [book](book.md)                                                    | \-                                 |      |
-| \-   | [添加书籍](book.md#添加)                                         | ```/app1/book/add```               |       |
+| \-   | [添加&编辑书籍](book.md#添加编辑)                                    | ```/app1/book/add```               |       |
 | \-   | [移除书籍](book.md#移除)                                          | ```/app1/book/remove```               |       |
 | \-   | [详情](book.md#详情)                                               | ```/app1/book/detail```            |      |
 | \-   | ~~[isbn添加](#)~~ **⚠️已废弃，功能并入 app1/book/add⚠️**            |                                    |      |
