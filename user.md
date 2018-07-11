@@ -37,18 +37,12 @@ params:
 
 |   变量   |    名称    | 必填 |  类型  |            描述           |
 | -------- | ---------- | ---- | ------ | ------------------------- |
-| username | 用户名     | 是   | string |                           |
+| phone    | 手机号     | 是   | string |                           |
 | key      | 密码       | 是   | string |                           |
 | platform | 平台       | 是   | string | IOS  ANDROID OTHER etc... |
 | version  | 版本       | 是   | string | 0.1.0                     |
 | uuid     | 设备标识ID | 是   | string |                           |
 
-请求示例：
-
-1.正式环境: 待定
-
-2.测试环境:
-http://47.52.101.29/app1/user/login?username=liu&key=123
 
 response:
 
@@ -61,12 +55,10 @@ response:
         "user": {
             "id": 1,
             "name": "刘先森",
-            "signture": "302af1b2e2a1d120ae91197b4eb23cc4",
             "status": 0,
             "sex": 0,
-            "avatar": "/static/images/user/cd678b5f206c51658d7d5dffd82e6980.png",
-            "phone": 18888888888,
-            "ctime": 0,
+            "avatar": "http://47.52.101.29/static/avatar_def.jpeg",
+            "phone": 18640933943,
             "utime": 0
         },
         "user_setting": {
@@ -87,12 +79,12 @@ response 说明：
 | msg                                 | 消息           | 请求正常为"ok",否则为详细错误信息   |
 | data.token                          | token          | 该用户的token，线上接口无该条目     |
 | data.user.id                        | 用户ID         |                                     |
-| data.user.openid                    | OPENID         | 测试属性，后期移除                  |
-| data.user.name                      | 用户名         |                                     |
-| data.user.ctime                     | 创建时间       | 创建时间，unixtimestamp，bigint(13) |
-| data.user.utime                     | 更新时间       | 更新时间，unixtimestamp，bigint(13) |
-| data.user.signture                  | 令牌           |                                     |
+| data.user.name                      | 用户名(昵称)   |                                     |
 | data.user.status                    | 账号状态       | 0:正常                              |
+| data.user.avatar                    | 头像地址       |                                     |
+| data.user.sex                       | 性别           | 0:外星人,1:男,2:女                  |
+| data.user.phone                     | 手机号         |                                     |
+| data.user.utime                     | 更新时间       | 更新时间，unixtimestamp，bigint(13) |
 | data.user_setting.id                |                |                                     |
 | data.user_setting.user_id           |                |                                     |
 | data.user_setting.notify_free_begin | 免打扰开始时间 | 24小时制  格式： hh:mm              |
