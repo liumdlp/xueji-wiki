@@ -35,10 +35,13 @@ uri: app1/user/login
 
 params:
 
-|   变量   |  名称  | 必填 |  类型  | 描述 |
-| -------- | ------ | ---- | ------ | ---- |
-| username | 用户名 | 是   | string |      |
-| key      | 密码   | 是   | string |      |
+|   变量   |    名称    | 必填 |  类型  |            描述           |
+| -------- | ---------- | ---- | ------ | ------------------------- |
+| username | 用户名     | 是   | string |                           |
+| key      | 密码       | 是   | string |                           |
+| platform | 平台       | 是   | string | IOS  ANDROID OTHER etc... |
+| version  | 版本       | 是   | string | 0.1.0                     |
+| uuid     | 设备标识ID | 是   | string |                           |
 
 请求示例：
 
@@ -94,6 +97,9 @@ response 说明：
 | data.user_setting.user_id           |                |                                     |
 | data.user_setting.notify_free_begin | 免打扰开始时间 | 24小时制  格式： hh:mm              |
 | data.user_setting.notify_free_end   | 免打扰结束时间 | 24小时制  格式：hh:mm               |
+
+#### 接口权限控制：
+***登陆后所有接口均需要token,platform,version,uuid四个参数同时存在***
 
 
 
