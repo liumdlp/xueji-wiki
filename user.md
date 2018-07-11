@@ -4,7 +4,7 @@
 + 方法列表
 	+ [登录](#登录)
 	+ [登出(TODO)](#todo登出)
-	+ [静默注册](#静默注册)
+	+ [注册](#注册)
 	+ [详情](#详情)
     + [设置](#设置)
     + [获取短信验证码](#获取短信验证码)
@@ -19,7 +19,6 @@
 | 333002 | 用户校验失败     |
 | 333003 | 图片验证码错误   |
 | 333004 | 手机号格式错误   |
-| 333005 | 忘记设置性别啦～ |
 | 333006 | 注册失败         |
 | 333007 | token添加失败    |
 | 333008 | 手机验证码错误   |
@@ -165,14 +164,21 @@ response 说明:
 | data.avatar   | 头像     |                                     |
 
 
-### 静默注册
+### 注册
 
-uri: app1/user/ssign_up
+uri: app1/user/sign_up
 
-params: 无
+params:
 
 
-请求示例：http://47.52.101.29/app1/user/ssign_up
+|   变量   |    名称    | 必填 |  类型  |           描述           |
+| -------- | ---------- | ---- | ------ | ------------------------ |
+| phone    | 手机号     | 是   | string |                          |
+| sms_code | 短信验证码 | 是   | string | 4个数字                  |
+| name     | 用户昵称   | 否   | string |                          |
+| sex      | 性别       | 否   | int    | 0(默认):外星人,1:男,2:女 |
+| key      | 密码       | 是   | string |                          |
+
 
 response:
 
@@ -181,36 +187,30 @@ response:
     "code": 0,
     "msg": "ok",
     "data": {
-        "token": "52b29deb878f15e1a22be9e0c5cfee80",
-        "user": {
-            "phone": 0,
-            "name": "x_079407",
-            "ctime": 1514272407,
-            "utime": 1514272407,
-            "sex": 0,
-            "status": 0,
-            "signture": "52b29deb878f15e1a22be9e0c5cfee80",
-            "id": 8
-        }
+        "phone": 18510542239,
+        "name": "学神_002887",
+        "ctime": 1531302887,
+        "utime": 1531302887,
+        "avatar": "http://47.52.101.29/static/avatar_def.jpeg",
+        "sex": 0,
+        "id": 12
     }
 }
 ```
 
 response 说明:
 
-|        字段        |   名称   |                 说明                |
-|--------------------|----------|-------------------------------------|
-| code               | 状态码   | 0:正常                              |
-| msg                | 消息     | 请求正常为"ok",否则为详细的错误信息 |
-| data.token         | token    | 该用户的token，线上接口无该条目     |
-| data.user.id       | ID       |                                     |
-| data.user.name     | 昵称     |                                     |
-| data.user.ctime    | 创建时间 | 类型为unixtimestamp                 |
-| data.user.utime    | 更新时间 | 类型为unixtimestamp                 |
-| data.user.signture | 签名     | 方便测试，临时token==signture       |
-| data.user.status   | 状态     | 0:正常                              |
-| data.user.sex      | 性别     | 0:外星人,1:男,2:女                  |
-| data.user.avatar   | 头像     |                                     |
+|       字段       |   名称   |                 说明                |
+| ---------------- | -------- | ----------------------------------- |
+| code             | 状态码   | 0:正常                              |
+| msg              | 消息     | 请求正常为"ok",否则为详细的错误信息 |
+| data.phone       | 手机号   | 手机号                              |
+| data.id          | ID       |                                     |
+| data.name        | 昵称     |                                     |
+| data.ctime       | 创建时间 | 类型为unixtimestamp                 |
+| data.utime       | 更新时间 | 类型为unixtimestamp                 |
+| data.sex         | 性别     | 0:外星人,1:男,2:女                  |
+| data.user.avatar | 头像     |                                     |
 
 
 ### 设置
