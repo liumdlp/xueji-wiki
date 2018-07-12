@@ -416,6 +416,42 @@ response:
             "time": 420,
             "page": 89
         }
+        "btm_list": [
+            {
+                "category_id": 21,  // key = (category_id 或 book_id)
+                "color": "488F62",
+                "day": [
+                    {
+                        "time_count": 0,
+                        "page_count": 0
+                    },
+                    {
+                        "time_count": 180,
+                        "page_count": 99
+                    },
+                    {
+                        "time_count": 60,
+                        "page_count": 30
+                    },
+                    {
+                        "time_count": 0,
+                        "page_count": 0
+                    },
+                    {
+                        "time_count": 0,
+                        "page_count": 0
+                    },
+                    {
+                        "time_count": 0,
+                        "page_count": 0
+                    },
+                    {
+                        "time_count": 0,
+                        "page_count": 0
+                    }
+                ]
+            }
+        ]
     }
 }
 ```
