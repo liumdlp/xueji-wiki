@@ -415,7 +415,7 @@ response:
         "max": {
             "time": 420,
             "page": 89
-        }
+        },
         "btm_list": [
             {
                 "category_id": 21,  // key = (category_id 或 book_id)
