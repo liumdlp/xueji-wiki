@@ -190,13 +190,16 @@ response:
     "code": 0,
     "msg": "ok",
     "data": {
-        "phone": 18510542239,
-        "name": "学神_002887",
-        "ctime": 1531302887,
-        "utime": 1531302887,
-        "avatar": "http://47.52.101.29/static/avatar_def.jpeg",
-        "sex": 0,
-        "id": 12
+        "token":"xxxxxxxxxxxxxxxxxx",
+        "user":{
+            "phone": 18510542239,
+            "name": "学神_002887",
+            "ctime": 1531302887,
+            "utime": 1531302887,
+            "avatar": "http://47.52.101.29/static/avatar_def.jpeg",
+            "sex": 0,
+            "id": 12
+        }
     }
 }
 ```
@@ -207,12 +210,13 @@ response 说明:
 | ---------------- | -------- | ----------------------------------- |
 | code             | 状态码   | 0:正常                              |
 | msg              | 消息     | 请求正常为"ok",否则为详细的错误信息 |
-| data.phone       | 手机号   | 手机号                              |
-| data.id          | ID       |                                     |
-| data.name        | 昵称     |                                     |
-| data.ctime       | 创建时间 | 类型为unixtimestamp                 |
-| data.utime       | 更新时间 | 类型为unixtimestamp                 |
-| data.sex         | 性别     | 0:外星人,1:男,2:女                  |
+| data.token       | token    |                                     |
+| data.user.phone  | 手机号   | 手机号                              |
+| data.user.id     | ID       |                                     |
+| data.user.name   | 昵称     |                                     |
+| data.user.ctime  | 创建时间 | 类型为unixtimestamp                 |
+| data.user.utime  | 更新时间 | 类型为unixtimestamp                 |
+| data.user.sex    | 性别     | 0:外星人,1:男,2:女                  |
 | data.user.avatar | 头像     |                                     |
 
 
