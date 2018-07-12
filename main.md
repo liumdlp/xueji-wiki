@@ -420,7 +420,7 @@ response:
             {
                 "category_id": 21,  // key = (category_id 或 book_id)
                 "color": "488F62",
-                "day": [
+                "day": [            // key = (day 或 week 或 month)
                     {
                         "time_count": 0,
                         "page_count": 0
