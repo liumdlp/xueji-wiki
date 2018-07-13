@@ -451,6 +451,12 @@ response:
                     }
                 ]
             }
+        ],
+        "category_list": [
+            {
+                "id": 20,
+                "name": "默认分类"
+            }
         ]
     }
 }
