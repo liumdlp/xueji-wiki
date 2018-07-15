@@ -419,7 +419,9 @@ response:
         "btm_list": [
             {
                 "category_id": 21,  // key = (category_id 或 book_id)
-                "color": "488F62",
+                "name": "数学",
+                "pic": "",          // 分类无封面图片,此处为空
+                "color": "#488F62",
                 "day": [            // key = (day 或 week 或 month)
                     {
                         "time_count": 0,
